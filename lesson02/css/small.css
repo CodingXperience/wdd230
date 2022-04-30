@@ -1,0 +1,54 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body rules here! */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+/* header rules here!*/
+footer, header {
+  background-color: #0B0B0B;
+  color: #f9fafa;
+  padding: 1rem 2%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+main figure img {
+  width: 100%;
+}
+figure {
+  margin: 10px;
+}
+.heading {
+  background-color: #0B0B0B;
+  color: #f9fafa;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+section {
+  border: 1px solid gainsboro;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+figure img {
+  border: 1px solid gainsboro;
+  padding: 0;
+  margin: 0;
+}

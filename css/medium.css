@@ -1,0 +1,23 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 1px solid black;
+    align-items: center;
+    background-color: #f9fafa;
+    box-shadow: 1px 1px 25px 1px;
+    border-radius: 5px;
+  }
+
+  header img {
+    max-width: 75%;
+    height: auto;
+  }
+  
+  footer {
+    border-radius: 3px;
+    background-color: #f9fafa;
+    border: 1px solid black;
+    box-shadow: 1px 1px 25px 1px;
+  }
+}

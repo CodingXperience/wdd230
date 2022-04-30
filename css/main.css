@@ -20,20 +20,16 @@ footer {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 200px 1fr;
   margin: 1rem auto;
   padding: 0.5rem;
-  border: 1px solid black;
-  align-items: center;
-  background-color: #f9fafa;
-  box-shadow: 1px 1px 25px 1px;
-  border-radius: 5px;
 }
 
 header img {
-  width: 75%;
-  height: auto;
+  display: block;
+  max-width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 h1 {
@@ -42,6 +38,7 @@ h1 {
 
 h2 {
   font-weight: bolder;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 ul {
@@ -57,10 +54,7 @@ footer {
   text-align: center;
   padding: 0.5rem;
   margin-top: 70px;
-  border-radius: 3px;
   background-color: #f9fafa;
-  border: 1px solid black;
-  box-shadow: 1px 1px 25px 1px;
 }
 
 #currentdate {

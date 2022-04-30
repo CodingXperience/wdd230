@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1028px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section:nth-child(1) {
+    grid-column: 1;
+  }
+
+  main section:nth-child(2) {
+    grid-column: 2;
+  }
+
+  main section:nth-child(3) {
+    grid-column: 3;
+  }
+
+
+
+}
