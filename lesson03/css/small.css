@@ -1,7 +1,8 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family= Ubuntu|Lora');
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 :root {
   /* change the values below to your colors from your palette */
@@ -40,6 +41,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+  font-size: 1.2em;
 }
 header {
   padding: 1em;
@@ -107,6 +109,10 @@ nav a:link, nav a:visited {
 }
 nav a:hover {
   font-weight: 900;
+}
+
+ul {
+  padding-left: 0;
 }
 nav ul li.active a {
   color: var(--nav-hover-link-color);
