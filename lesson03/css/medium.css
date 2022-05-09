@@ -15,7 +15,6 @@ h1 {
 /*----------- NAVIGATION --------------*/
     nav ul {
         display: flex;
-        margin-left: 2%;
     }
     nav ul li {flex-basis: 25%;}
 
