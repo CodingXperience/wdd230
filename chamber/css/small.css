@@ -1,0 +1,128 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* body rules here!*/
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+/* header rules here!*/
+header {
+  padding: .5rem 2%;
+  background-color: #666666;
+  display: grid;
+  grid-template-columns: 75px auto;
+  color: #FFFFFF;
+}
+.social {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+div h1, h2 {
+  font-size: 1.2rem;
+}
+.date {
+  grid-column:  2;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+header img {
+  max-width: 100%;
+}
+
+header div {
+  margin-left: 10px;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/* navigation rules here! */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav {
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+nav button {
+  margin: .2rem 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+}
+
+nav li a {
+  color: #2F6630;
+}
+
+nav ul li.active a {
+  color: #2F6630;
+}
+/*nav a:visited {
+  color: #0B0B0B;
+}*/
+nav a:hover {
+  font-weight: 900;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+#spotlight {
+  border: 1px solid #0B0B0B;
+}
+
+.place-holder-box {
+  display: block;
+  border: 1px solid #0B0B0B;
+  height: 20vw;
+  margin: .2rem;
+}
+#spot {display: none;}
+
+
+/*div section{
+  border: 1px solid #0B0B0B;
+} 
+
+div aside {
+  border: 1px solid #0B0B0B;
+}*/
+
+.join {display: none;}
+
+footer  {
+  display: block;
+  text-align: center;
+  border: 1px solid #BBB;
+  margin-top: 1rem;
+}
+
+footer img {
+  max-width: 15%;
+}
