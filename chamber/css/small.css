@@ -17,6 +17,17 @@ header {
   grid-template-columns: 75px auto;
   color: #FFFFFF;
 }
+
+.hero {
+  position: relative;
+}
+.hero picture img {
+  width: 100%;
+}
+
+.action {
+  display: none;
+}
 .social {
   grid-column: 1;
   grid-row: 2;
@@ -93,26 +104,12 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-#spotlight {
-  border: 1px solid #0B0B0B;
-}
 
 .place-holder-box {
   display: block;
   border: 1px solid #0B0B0B;
-  height: 20vw;
   margin: .2rem;
 }
-#spot {display: none;}
-
-
-/*div section{
-  border: 1px solid #0B0B0B;
-} 
-
-div aside {
-  border: 1px solid #0B0B0B;
-}*/
 
 .join {display: none;}
 
@@ -125,4 +122,11 @@ footer  {
 
 footer img {
   max-width: 15%;
+}
+p  {
+  margin: 5px;
+}
+
+h2 {
+  margin: 5px;
 }
