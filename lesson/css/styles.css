@@ -18,7 +18,7 @@ main {
   margin: 0.5rem auto;
   border: 1px solid rgba(0,0,0,0.2);
   padding: 0.5rem;
-  background-color: #bed;
+  background-color: #2D3B5E;
   display: grid;
   grid-template-columns: 1fr;
   width: 95%;
@@ -30,15 +30,16 @@ button {
   font-size: 1.1rem;
 }
 
-.form {
+input {
   width: 200px;
 }
 label {
   font-size: 0.9rem;
+  color: whitesmoke;
 }
 
 .list_container {
-  border: 1px solid rgba(0,0,0, 0.2);
+  border: 1px solid white;
   margin: 1rem;
   padding: 1rem;
 }
@@ -53,8 +54,9 @@ ul {
 li {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
+  color: 	#FFD700;
 }
 
 @media only screen and (min-width: 32.5rem) {
