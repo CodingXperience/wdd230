@@ -21,8 +21,8 @@ header {
 .hero {
   position: relative;
 }
-.hero picture img {
-  width: 100%;
+main figure img {
+  width: 50%;
 }
 
 .action {
