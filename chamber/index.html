@@ -43,9 +43,12 @@
   <main>
     <h1 class="title">Home Page</h1>
     <div class="place-holder-box hero">
-      <figure>
-        <img src="images/hero_image.jpg" alt="banner">
-      </figure>
+      <picture class="home-illustration">
+        <source media="(min-width: 500px) and (max-width: 1024px)" srcset="images/hero_medium.jpg">
+        <!--source media="(max-width: 799px)" srcset="images/hero_mediumh.jpg"-->
+        <source media="(min-width: 800px)" srcset="images/hero_mediumh.jpg">
+        <img src="images/hero_medium.jpg" alt="illustration">
+      </picture>
       <div class = "action">
         <p>Lorem ipsum dolor sit amet consectetur.</p>
         <button>Join Now!</button>
