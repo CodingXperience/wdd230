@@ -5,7 +5,7 @@
   <meta name="description" content="Fill Me In">
   <meta name="author" content="Fred Okorio">
   <title>Home: Chamber of Commerce</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- STYLE SHEETS -->
   <link href="css/normalize.css" rel="stylesheet">
@@ -15,19 +15,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon1.ico" type="image/x-icon">
 
 </head>
 <body>
   <header>
-    <img src="images/logo.jpeg" alt="company_logo">
+    <img src="images/logo.webp" alt="company_logo">
     <div>
       <h1>East African Community Chamber of Commerce</h1>
-      <h2>The homo sapiens</h2>
+      <h2 class="slogan">The homo sapiens</h2>
     </div>
     <div class="social">
-      <a href="#"><img src="images/facebook_logo.png" alt="facebook_icon"></a>
-      <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"></a>
+      <a href="#"><img src="images/facebook_logo.png" alt="facebook_icon" width="35" height="35"></a>
+      <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"  width="35" height="35"></a>
     </div>
     <span class="date"></span>
   </header>
@@ -41,13 +41,20 @@
     </ul>
   </nav>
   <main>
+    <div id="message" class="marquee_wrapper">
+      <div class="marquee">
+        <span>🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+      </div>
+    </div>
+    
     <h1 class="title">Home Page</h1>
     <div class="place-holder-box hero">
       <picture class="home-illustration">
-        <source media="(min-width: 500px) and (max-width: 1024px)" srcset="images/home-illustration500-1024.jpg">
-        <!--source media="(max-width: 799px)" srcset="images/hero_mediumh.jpg"-->
-        <source media="(min-width: 800px)" srcset="images/home-illustration-max1024.jpg">
-        <img src="images/home-illustration500-1024.jpg" alt="illustration">
+        <source media="(min-width: 1024px)" srcset="images/home_illustration9001px.jpg">
+        <source media="(min-width: 900px)" srcset="images/home_illustration900x604px.jpg">
+        <source media="(min-width: 650px)" srcset="images/home_illustration650x302px.jpg">
+        <source media="(min-width: 400px)" srcset="images/home_illustration400x185px.jpg">
+        <img src="images/home_illustration9001px.jpg" alt="illustration">
       </picture>
       <div class = "action">
         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -55,35 +62,63 @@
       </div>
     </div>
     <div class="place-holder-box event">
-      <h2>event</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <h2 class="event_title">[Virtual] Speed Networking</h2>
+      <h3>VIRTUAL EVENT</h3>
+      <p>Wednesday, June 01, 2022 — 09:30 AM – 11:00 AM — </p>
+      <p>Learn more....</p>
     </div>
     <div class="place-holder-box weather">
-      <h2>weather</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, quos?</p>
+      <h2 id="weather_title">weather</h2>
+      <figure class="weather_illustration">
+        <img src="images/weather_symbol.jpg" alt="">
+      </figure>
+      <span id="temp">32&deg;C</span>
+      <h3 class="weather_second_title">Partly Cloudy</h3>
+      <hr>
+      <p class="speed_paragraphy">Wind Speed: <span id="speed">60</span>km/h</p>
+      <p class="chill_paragraphy" id="chill">Wind Chill: </p>
     </div>
     <article class="place-holder-box news">
       <h2>new release</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit qui voluptatem ducimus aspernatur dolores!</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Suscipit eos autem animi nulla eligendi magnam 
+        vel modi. Sapiente eum temporibus culpa, distinctio 
+        animi, enim voluptate reiciendis, tenetur voluptatibus 
+        laboriosam minima ad non? Pariatur eius laudantium 
+        magnam maxime nulla dicta nesciunt voluptates nihil, 
+        modi consequuntur quae corrupti totam quaerat unde 
+        dolores.
+      </p>
     </article>
     <div class="place-holder-box join">
-      <h2>Join</h2>
+      <p class = "button">
+        <a href="#">Join Us</a>
+      </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="place-holder-box spot1">
-      <h2>spotlight 1</h2>
-      <div class="frameset"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+      <h2>Thankful Transport</h2>
+      <div class="frameset">
+        <figure><img src="images/transport_icon1.jpg" alt="transport_image"></figure>
+      </div>
+      <hr>
+      <p>Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+      </p> 
     </div>
     <div class="place-holder-box spot2">
-      <h2>spotlight 2</h2>
-      <div class="frameset"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
-    
+      <h2>Code Primera</h2>
+      <div class="frameset">
+        <figure><img src="images/code_illustration2.jpg" alt="code_image"></figure>
+      </div>
+      <hr>
+      <p>Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+      </p> 
     </div>
   </main>
   <footer>
-    <picture id="logo"><img src="images/logo.jpeg" alt="company_logo"></picture>
+    <picture id="logo"><img src="images/logo.webp" alt="company_logo"></picture>
     <div id="location">
       <p>East African Community Chamber of Commerce</p>
       <p>Wampewo Avenue, Kampala</p>

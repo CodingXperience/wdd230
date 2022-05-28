@@ -12,25 +12,43 @@
     margin-top: 0;
     justify-self: end;
   }
- 
-  div h2 {margin-top: 2rem;}
+  .slogan {margin-top: 1.5rem;}
 
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 50px;
     max-width: 59rem;
     margin: auto;
   }
-  .title {grid-column: 1; font-size: 1.5rem;}
-  .hero {grid-column: span 4; grid-row: 2;}
-  .news {grid-column: span 4; grid-row: 3;}
-  .spot1 {grid-column: span 2; grid-row: 4;}
-  .spot2 {grid-column: 3 / span 2; grid-row: 4;}
-  .join {display:block; grid-column: span 4; grid-row: 5;}
-  .event {grid-column: span 2; grid-row: 6;}
-  .weather {grid-column: 3 / span 2; grid-row: 6;}
+  #message{grid-column: span 4; grid-row: 1;}
+  .title {grid-column: 1; font-size: 1.5rem; padding: 0;}
+  .hero {grid-column: span 4; grid-row: 3; display: block;}
+  .news {grid-column: span 4; grid-row: 4;}
+  .spot1 {grid-column: span 2; grid-row: 5;}
+  .spot2 {grid-column: 3 / span 2; grid-row: 5;}
+  .join {display:block; grid-column: span 4; grid-row: 6;}
+  .event {grid-column: span 2; grid-row: 7;}
+  .weather {grid-column: 3 / span 2; grid-row: 7;}
+
+  .marquee_wrapper {
+    height: 44px;
+    width: 100%;
+  }
   picture img {
     max-width: 100%;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  .join {
+    text-align: center;
+  }
+  .weather figure img {
+    width: 60%;
+    margin: 5px;
   }
 
   footer {

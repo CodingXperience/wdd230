@@ -31,31 +31,37 @@
     main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 50px 1fr 1fr 1fr;
+      grid-template-rows: 25px 50px;
     }
+    #message {grid-row: 1; grid-column: span 4; text-align: center;}
     .title {
       grid-column: 1; 
+      grid-row: 2;
       font-size: 1.5rem;
+      margin: revert;
     }
     .hero {
       grid-column: 2 / span 2;
-      grid-row: 2 / span 2;
+      grid-row: 3 / span 2;
     }
     .home-illustration img {
       display: block;
-      height: 100%;
+      height: auto;
     }
-    .news {grid-column: 2 / span 3; grid-row: 4;}
-    .spot1 {grid-column: 4; grid-row: 2 / span 2;}
-    .spot2 {grid-column: 4; grid-row: 3;}
-    .join {display: block; grid-column: 1; grid-row: 4;}
-    .event {grid-column: 1; grid-row: 2;}
-    .weather {grid-column: 1; grid-row: 3;}
+    .news {grid-column: 2 / span 3; grid-row: 5;}
+    .spot1 {grid-column: 4; grid-row: 3;}
+    .spot2 {grid-column: 4; grid-row: 4;}
+    .join {display: block; grid-column: 1; grid-row: 5; text-align: inherit;}
+    .event {grid-column: 1; grid-row: 3;}
+    .weather {grid-column: 1; grid-row: 4;}
 
     .frameset {
       border: 1px solid #0B0B0B;
       margin: 5px;
-      padding: 50px;
+    }
+    .weather figure img {
+      width: 90%;
+      margin: 6px;
     }
 
     .action button {
@@ -73,12 +79,20 @@
     .action {
       display: block;
       position: absolute;
-      bottom: 295px;
+      bottom: 34px;
       background-color: rgba(240, 240, 240, 0.8);
       margin: 1em 2em;
       padding: 2em;
       text-align: center;
-      width: 80%;
+      width: 54%;
+      left: 136px;
+    }
+    .marquee_wrapper {
+      height: 140px;
+    }
+
+    .marquee span {
+      line-height: 140px;
     }
   
     
