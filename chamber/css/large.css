@@ -78,11 +78,14 @@
 
     .action {
       display: block;
+      position: absolute;
       bottom: 34px;
       background-color: rgba(240, 240, 240, 0.8);
       margin: 1em 2em;
       padding: 2em;
       text-align: center;
+      width: 54%;
+      left: 129px;
     }
     .marquee_wrapper {
       height: 140px;
