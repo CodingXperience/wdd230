@@ -1,0 +1,14 @@
+img {
+  background: #F1F1FA;
+  width: 400px;
+  display: block;
+  margin: 10px auto;
+  border: 0;
+  padding: 2px;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+h1 {
+  text-align: center;
+}
