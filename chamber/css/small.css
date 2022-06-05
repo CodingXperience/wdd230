@@ -265,3 +265,64 @@ figure {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* discover rules here!*/
+
+section {
+  display: block;
+  border: 1px solid #9aa0a6;
+  margin: .5rem;
+}
+
+section div img {
+  width: 100%;
+}
+
+.contact-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1140px;
+}
+.demo-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+#contact-heading {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  left: 0;
+  font-size: 2rem; 
+  padding: 1em;
+}
+
+.info {
+  text-align: center;
+  border: 1px solid #dee2e6;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.info img {
+  width: 50%;
+}
+
+
+section:nth-child(9) {
+  display: none;
+}
+section:nth-child(10) {
+  display: none;
+}
+section:nth-child(11) {
+  display: none;
+}
