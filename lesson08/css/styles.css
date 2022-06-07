@@ -29,7 +29,9 @@ table {
 caption {
   padding: 10px;
 	color: var(--back);
-	font-size: 1.5rem;
+	font-size: 1.7rem;
+	font-weight: 950;
+	text-shadow: 0 0 150px var(--shadow);
 }
 
 tr:first-child th {
