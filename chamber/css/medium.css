@@ -60,40 +60,49 @@
   #location {grid-column: 2; text-align: left;}
   #personal-info {grid-column: 3; text-align: right; margin-right: 1rem;}
   #copyright {grid-column: span 3;}
+
+  .demo-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    background-color: #ffffff;
+    padding: 2rem;
+  }
   
+  #info1 {
+    display: block;
+  }
   section:nth-child(3) {
     grid-column: span 4;
     grid-row: 3;
   }
   section:nth-child(4) {
-    grid-column: 1 / span 2;
-    grid-row: 4;
+    display: none;
   }
 
   section:nth-child(5) {
-    grid-column: 3 / span 2;
-    grid-row: 4;
+    display: none;
   }
   section:nth-child(6) {
-    grid-column: 1 / span 2;
-    grid-row: 5;
+    display: none;
   }
 
   section:nth-child(7) {
-    grid-column: 3 / span 2;
-    grid-row: 5;
+    grid-column: 1 / span 2;
+    grid-row: 4;
   }
   section:nth-child(8) {
-    grid-column: 1 / span 2;
-    grid-row: 6;
+    grid-column: 3 / span 2;
+    grid-row: 4;
   }
   section:nth-child(9) {
-    display: block;
-    grid-column: 3 / span 2;
-    grid-row: 6;
+    grid-column: 1 / span 2;
+    grid-row: 5;
   }
   section:nth-child(10) {
-    display: none;
+    grid-column: 3 / span 2;
+    grid-row: 5;
   }
   section:nth-child(11) {
     display: none;

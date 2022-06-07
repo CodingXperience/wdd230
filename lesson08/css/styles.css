@@ -1,0 +1,84 @@
+:root {
+	--back: #292D33;
+  --back2: #292D33;
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsla(0,0%,100%,1);
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+table {
+  background-color: #292D33;
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+	color: var(--back);
+	font-size: 1.5rem;
+}
+
+tr:first-child th {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th:nth-child(1) {
+	background-color: #FD9C01;
+	color: var(--forelight);
+}
+
+th:nth-child(2) {
+	background-color: #EC3D45;
+	color: var(--forelight);
+}
+
+th:nth-child(3) {
+	background-color: #08B9CA;
+	color: var(--forelight);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+tbody tr:nth-child(odd) {
+	color: var(--forelight);
+}
+
+tbody tr:nth-child(odd) {
+	color: var(--forelight);
+}
+
+#price_highlight {
+	background-color: #08B9CA;
+  color: var(--forelight);
+}
+
+#period_highlight {
+	font-style: italic;
+}

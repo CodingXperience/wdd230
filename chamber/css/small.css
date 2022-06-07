@@ -288,7 +288,7 @@ section div img {
 }
 .demo-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 5px;
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   background-color: #ffffff;
@@ -315,14 +315,16 @@ section div img {
 .info img {
   width: 50%;
 }
-
-
-section:nth-child(9) {
+#info1 {
   display: none;
 }
-section:nth-child(10) {
+
+section:nth-child(4) {
   display: none;
 }
-section:nth-child(11) {
+section:nth-child(5) {
+  display: none;
+}
+section:nth-child(6) {
   display: none;
 }
