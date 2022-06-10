@@ -328,3 +328,97 @@ section:nth-child(5) {
 section:nth-child(6) {
   display: none;
 }
+
+main#join_main {
+  background-image: url("../images/textured_background1.jpg");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.join_header {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.join_header img {
+  display: block;
+  width: 100%;
+}
+.join_title {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+form{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  margin-top: -30px;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  background-color: white;
+}
+
+form legend {
+  color: #0B0B0B;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #A0EBE5;
+  color: white;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+textarea {
+  height: 35vh;
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin-right: 3px;
+}

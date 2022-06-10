@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fill Me In">
+  <meta name="author" content="Fred Okorio">
+  <title>Join: Chamber of Commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- STYLE SHEETS -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon1.ico" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <img src="images/logo.webp" alt="company_logo">
+    <div>
+      <h1>East African Community Chamber of Commerce</h1>
+      <h2 class="slogan">The homo sapiens</h2>
+    </div>
+    <div class="social">
+      <a href="#"><img src="images/facebook_logo.png" alt="facebook_icon" width="35" height="35"></a>
+      <a href="#"><img src="images/linkedin_icon.png" alt="linkedin_icon"  width="35" height="35"></a>
+    </div>
+    <span class="date"></span>
+  </header>
+  <nav>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+    <ul id="primaryNav">
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">Directory</a></li>
+      <li class="active"><a href="join.html">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="join_main">
+    <div id="message" class="marquee_wrapper">
+      <div class="marquee">
+        <span>🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
+      </div>
+    </div>
+    <div class="join_header">
+      <img src="images/Join_header.jpg" alt="header">
+    </div>
+
+    <h1 class="join_title">Membership Application</h1>
+    <form action="thank.html" method="get">
+        <fieldset>
+            <legend>Application Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top">Business Position Title <input type="text" name="title"></label>
+            <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="write2chamber@gmail.com" required></label>
+            <label class="top">Business Name* <input type="text" name="title" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Membership Levels</div>
+            <label class="sbs"><input type="radio" name="audience" value="np">NP</label>
+            <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze</label>
+            <label class="sbs"><input type="radio" name="audience" value="silver">Silver</label>
+            <label class="sbs"><input type="radio" name="audience" value="gold">Gold</label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label class="top" for="comments">Message:</label>
+		        <textarea id="comments" name="comments" required></textarea>
+        </fieldset>
+        <input type="submit" value="Submit My Application" class="submitBtn">
+    </form>
+  </main>
+  <footer>
+    <picture id="logo"><img src="images/logo.webp" alt="company_logo"></picture>
+    <div id="location">
+      <p>East African Community Chamber of Commerce</p>
+      <p>Wampewo Avenue, Kampala</p>
+      <p>Kampala, 00000</p>
+    </div>
+    <div id="personal-info">
+      <p><a href="#">send2fredokorio@gmail.com</a></p>
+      <p>+(256) 753 514-631</p>
+
+      <p>Link to Map</p>
+    </div>
+    <div id="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span></div>
+  </footer>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
