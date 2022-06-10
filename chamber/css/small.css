@@ -422,3 +422,7 @@ textarea {
 input[type="radio"] {
   margin-right: 3px;
 }
+
+.thank_page {
+  display: block;
+}
