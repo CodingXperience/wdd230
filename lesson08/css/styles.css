@@ -76,11 +76,15 @@ tbody tr:nth-child(odd) {
 	color: var(--forelight);
 }
 
-#price_highlight {
+tbody tr:nth-child(4) td:last-child {
 	background-color: #08B9CA;
   color: var(--forelight);
 }
 
-#period_highlight {
+tbody tr:nth-child(5) td:first-child {
 	font-style: italic;
+}
+
+tfoot {
+	color: var(--forelight);
 }
