@@ -35,22 +35,22 @@ if (dayNumber == 1 || dayNumber == 2) {
   element.classList.add("hideme");
 }
 
-const tempNumber = parseFloat(document.getElementById("temp").textContent);
-//console.log(tempNumber)
-const speedNumber = parseFloat(document.getElementById("speed").textContent);
-//console.log(speedNumber)
+// const tempNumber = Number(document.getElementById("temp").textContent);
+// //console.log(tempNumber)
+// const speedNumber = Number(document.getElementById("speed").textContent);
+// //console.log(speedNumber)
 
-let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber,
-  0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
-  //console.log(windchill)
-  windchill = Math.round(windchill);
-  //console.log(windchill)
+// let windchill = 35.74 + (0.6215 * tempNumber) - (35.75 * Math.pow(speedNumber,
+//   0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+//   //console.log(windchill)
+//   windchill = Math.round(windchill);
+//   //console.log(windchill)
 
-  if (tempNumber<=50 && speedNumber > 3){
-    document.getElementById("chill").textContent = "Wind Chill: " + windchill + "\xB0F";
-  } else {
-    document.getElementById("chill").textContent = "N/A";
-  }
+//   if (tempNumber<=50 && speedNumber > 3){
+//     document.getElementById("chill").textContent = "Wind Chill: " + windchill + "\xB0F";
+//   } else {
+//     document.getElementById("chill").textContent = "N/A";
+//   }
 
   // initialize display elements
 const todayDisplay = document.querySelector(".today");
@@ -73,5 +73,25 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-// show todays date.
-todayDisplay.textContent = Date.now();
+
+
+
+
+if(!!window.IntersectionObserver){console.log("Inserction Observer is super cool")}
+
+
+// create a function
+let myObserver = new IntersectionObserver((myListA, myObserver) => { 
+    myListA.forEach(cupX => {
+    if(cupX.isIntersecting){
+        cupX.target.src = cupX.target.dataset.src;
+        cupX.target.removeAttribute('data-src');
+        myObserver.unobserve(cupX.target);
+    }
+    });
+}, {rootMargin: "0px 0px -500px 0px"});
+
+// make a list of all images with a data source and send that list to myObserver
+document.querySelectorAll('img[data-src]').forEach(img => {myObserver.observe(img) });
+
+
