@@ -5,6 +5,13 @@ img {
   margin: 10px auto;
   border: 0;
   padding: 2px;
+}
+
+main picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+main picture img {
   filter: blur(0em);
   transition: filter 0.5s;
 }

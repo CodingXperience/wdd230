@@ -329,11 +329,14 @@ section:nth-child(6) {
   display: none;
 }
 
-main#join_main {
+.join_main {
   background-image: url("../images/textured_background1.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+}
+.join_main #message {
+  display: none;
 }
 .join_header {
   grid-column: 1 / span 2;
@@ -425,4 +428,7 @@ input[type="radio"] {
 
 .thank_page {
   display: block;
+}
+.discover_main #message {
+  display: none;
 }
