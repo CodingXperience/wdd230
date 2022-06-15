@@ -1,0 +1,102 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+  font-family: "Ubuntu", cursive;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-image: linear-gradient(white, lightgray, gray);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 0 0 14px black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../images/foggy_birds.png);
+  background-repeat:repeat;
+}
+
+section {
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+  background-color: #f9fafa;
+  max-width: 400px;
+  padding-bottom: 5px;
+  margin: 3px;
+  text-align: center;
+}
+
+section img {
+  width: 70%;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+svg {
+  display: block;
+  font: 35px 'Ubuntu';
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 2px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #4D163D;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #840037;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #BD0034;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #BD0034;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #FDB731;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
