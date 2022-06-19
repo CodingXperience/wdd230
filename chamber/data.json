@@ -1,0 +1,85 @@
+{
+  "companies": [
+    {
+      "name": "MTN Group",
+      "category": "Mobile telecommunication company",
+      "state": "South Africa",
+      "phonenumber": "+(+27)312-100000",
+      "membershiplevel": "Gold",
+      "imageurl": "images/",
+      "weburl": "https://www.mtn.com/"
+    },
+    {
+      "name": "Kiira Motors Corporation",
+      "category": "State enterprise",
+      "state": "Uganda",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "Bronze",
+      "imageurl": "images/",
+      "weburl": "https://www.kiiramotors.com/"
+    },
+    {
+      "name": "Equity Group Holdings",
+      "category": "Financial company",
+      "state": "Kenya",
+      "phonenumber": "+(254)312-100000",
+      "membershiplevel": "Gold",
+      "imageurl": "images/",
+      "weburl": "https://equitygroupholdings.com/"
+    },
+    {
+      "name": "Flutterwave",
+      "category": "Financial technology company",
+      "state": "Nigeria",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "Gold",
+      "imageurl": "images/",
+      "weburl": "http://www.flutterwave.com/"
+    },
+    {
+      "name": "Sonatrach",
+      "category": "Oil Company",
+      "state": "Algeria",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "silver",
+      "imageurl": "images/",
+      "weburl": "https://sonatrach.com/"
+    },
+    {
+      "name": "Amazon Africa",
+      "category": "E-commerce company",
+      "state": "Rwanda",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "silver",
+      "imageurl": "images/",
+      "weburl": "https://www.amazon.com/"
+    },
+    {
+      "name": "Amazon Africa",
+      "category": "E-commerce company",
+      "state": "Rwanda",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "silver",
+      "imageurl": "images/",
+      "weburl": "https://www.amazon.com/"
+    },
+    {
+      "name": "Amazon Africa",
+      "category": "E-commerce company",
+      "state": "Rwanda",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "silver",
+      "imageurl": "images/",
+      "weburl": "https://www.amazon.com/"
+    },
+    {
+      "name": "Amazon Africa",
+      "category": "E-commerce company",
+      "state": "Rwanda",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "silver",
+      "imageurl": "images/",
+      "weburl": "https://www.amazon.com/"
+    }
+  ]
+}
