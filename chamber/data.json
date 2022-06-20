@@ -7,7 +7,8 @@
       "phonenumber": "+(+27)312-100000",
       "membershiplevel": "Gold",
       "imageurl": "images/",
-      "weburl": "https://www.mtn.com/"
+      "weburl": "https://www.mtn.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Kiira Motors Corporation",
@@ -16,7 +17,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "Bronze",
       "imageurl": "images/",
-      "weburl": "https://www.kiiramotors.com/"
+      "weburl": "https://www.kiiramotors.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Equity Group Holdings",
@@ -25,7 +27,8 @@
       "phonenumber": "+(254)312-100000",
       "membershiplevel": "Gold",
       "imageurl": "images/",
-      "weburl": "https://equitygroupholdings.com/"
+      "weburl": "https://equitygroupholdings.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Flutterwave",
@@ -34,7 +37,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "Gold",
       "imageurl": "images/",
-      "weburl": "http://www.flutterwave.com/"
+      "weburl": "http://www.flutterwave.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Sonatrach",
@@ -43,7 +47,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "silver",
       "imageurl": "images/",
-      "weburl": "https://sonatrach.com/"
+      "weburl": "https://sonatrach.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Amazon Africa",
@@ -52,7 +57,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "silver",
       "imageurl": "images/",
-      "weburl": "https://www.amazon.com/"
+      "weburl": "https://www.amazon.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Amazon Africa",
@@ -61,7 +67,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "silver",
       "imageurl": "images/",
-      "weburl": "https://www.amazon.com/"
+      "weburl": "https://www.amazon.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Amazon Africa",
@@ -70,7 +77,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "silver",
       "imageurl": "images/",
-      "weburl": "https://www.amazon.com/"
+      "weburl": "https://www.amazon.com/",
+      "detail": "View Listing"
     },
     {
       "name": "Amazon Africa",
@@ -79,7 +87,8 @@
       "phonenumber": "+(256)312-100000",
       "membershiplevel": "silver",
       "imageurl": "images/",
-      "weburl": "https://www.amazon.com/"
+      "weburl": "https://www.amazon.com/",
+      "detail": "View Listing"
     }
   ]
 }

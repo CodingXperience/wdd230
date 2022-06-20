@@ -319,13 +319,13 @@ section div img {
   display: none;
 }
 
-section:nth-child(4) {
+.demography {
   display: none;
 }
-section:nth-child(5) {
+.item_one {
   display: none;
 }
-section:nth-child(6) {
+.item_two {
   display: none;
 }
 
@@ -442,18 +442,24 @@ section div img {
   transition: filter 0.5s;
 }
 
-section:nth-child(4) {
-  display: block;
-}
-
-section:nth-child(5) {
-  display: block;
-}
-
-section:nth-child(6) {
-  display: block;
-}
-
 .cards section{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30px 25px 25px 25px 25px 25px;
   height: 30vh;
+  background-color: rgba(240, 240, 240, 0.8);
+  border: none;
+}
+.cards p:nth-child(7) {
+  text-align: center;
+  /* vertical-align: baseline; */
+  position: relative;
+  left: 268px;
+  top: 67px;
+  /* bottom: -43px; */
+  background-color: black;
+  width: 35%;
+  height: 5vh;
+  /* float: right; */
+  padding: 13px;
 }

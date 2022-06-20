@@ -23,22 +23,34 @@ async function getProphets() {
 function buildProphetCards(data) {
   data.companies.forEach(company => {
     let card = document.createElement("section");
-    let name = document.createElement("name");
-    //let imageurl = document.createElement("imageurl");
-    let category = document.createElement("category");
-    let weburl = document.createElement("weburl");
+    let name = document.createElement("h2");
+    let imageurl = document.createElement("p");
+    let category = document.createElement("p");
+    let weburl = document.createElement("p");
+    let state = document.createElement("p");
+    let phonenumber = document.createElement("p");
+    let membershiplevel = document.createElement("p");
+    let detail = document.createElement("p");
+
 
     name.innerHTML = `${company.name}`;
     //imageurl.innerHTML = `${prophet.imageurl}`;
-    category.innerHTML = `${company.category}`;
+    category.innerHTML = `Category: ${company.category}`;
+    phonenumber.innerHTML = `Contact: ${company.phonenumber}`;
+    membershiplevel.innerHTML = `${company.membershiplevel}`;
+    state.innerHTML = `State: ${company.state}`;
     weburl.innerHTML = `${company.weburl}`;
+    detail.innerHTML = `${company.detail}`;
     
-    <br>card.appendChild(name);</br>
 
-    
+    card.appendChild(name);
     //card.append(imageurl);
     card.appendChild(category);
+    card.appendChild(phonenumber);
+    card.appendChild(membershiplevel);
+    card.appendChild(state);
     card.appendChild(weburl);
+    card.appendChild(detail);
     cards.appendChild(card);
   })
 }
