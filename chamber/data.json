@@ -8,7 +8,8 @@
       "membershiplevel": "Gold",
       "imageurl": "images/",
       "weburl": "https://www.mtn.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/gold_icon.png"
     },
     {
       "name": "Kiira Motors Corporation",
@@ -18,7 +19,8 @@
       "membershiplevel": "Bronze",
       "imageurl": "images/",
       "weburl": "https://www.kiiramotors.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/bronze_icon.png"
     },
     {
       "name": "Equity Group Holdings",
@@ -28,7 +30,8 @@
       "membershiplevel": "Gold",
       "imageurl": "images/",
       "weburl": "https://equitygroupholdings.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/gold_icon.png"
     },
     {
       "name": "Flutterwave",
@@ -38,7 +41,8 @@
       "membershiplevel": "Gold",
       "imageurl": "images/",
       "weburl": "http://www.flutterwave.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/gold_icon.png"
     },
     {
       "name": "Sonatrach",
@@ -48,7 +52,8 @@
       "membershiplevel": "silver",
       "imageurl": "images/",
       "weburl": "https://sonatrach.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/silver_icon.png"
     },
     {
       "name": "Amazon Africa",
@@ -58,7 +63,8 @@
       "membershiplevel": "silver",
       "imageurl": "images/",
       "weburl": "https://www.amazon.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/silver_icon.png"
     },
     {
       "name": "Amazon Africa",
@@ -68,7 +74,8 @@
       "membershiplevel": "silver",
       "imageurl": "images/",
       "weburl": "https://www.amazon.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/silver_icon.png"
     },
     {
       "name": "Amazon Africa",
@@ -78,7 +85,8 @@
       "membershiplevel": "silver",
       "imageurl": "images/",
       "weburl": "https://www.amazon.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/silver_icon.png"
     },
     {
       "name": "Amazon Africa",
@@ -88,7 +96,8 @@
       "membershiplevel": "silver",
       "imageurl": "images/",
       "weburl": "https://www.amazon.com/",
-      "detail": "View Listing"
+      "detail": "View Listing",
+      "icon": "images/silver_icon.png"
     }
   ]
 }
