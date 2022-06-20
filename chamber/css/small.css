@@ -463,3 +463,7 @@ section div img {
   /* float: right; */
   padding: 13px;
 }
+
+.cards section img {
+  width: 20%;
+}
