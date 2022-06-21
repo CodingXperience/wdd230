@@ -45,7 +45,7 @@ function buildProphetCards(data) {
     membershiplevel.innerHTML = `${company.membershiplevel}`;
     state.innerHTML = `State: ${company.state}`;
     weburl.innerHTML = `<a href ="${company.weburl}" target="_blank">${company.name}'s website link </a>`;
-    detail.innerHTML = `${company.detail}`;
+    detail.innerHTML = `<a href="#">${company.detail}</a>`;
     
     
 
