@@ -25,31 +25,31 @@ function buildProphetCards(data) {
     let card = document.createElement("section");
     let name = document.createElement("h2");
     let icon = document.createElement("img");
-    let imageurl = document.createElement("p");
+    let logo = document.createElement("img");
     let category = document.createElement("p");
     let weburl = document.createElement("p");
     let state = document.createElement("p");
     let phonenumber = document.createElement("p");
     let membershiplevel = document.createElement("p");
-    let detail = document.createElement("p");
+    let detail = document.createElement("button");
     
 
 
     name.innerHTML = `${company.name}`;
     icon.setAttribute("src", company.icon);
     icon.setAttribute("alt", "membership level");
-    //imageurl.innerHTML = `${prophet.imageurl}`;
+    logo.setAttribute("src", company.logo);
+    logo.setAttribute("alt", `${company.name}'s logo`);
     category.innerHTML = `Category: ${company.category}`;
     phonenumber.innerHTML = `Contact: ${company.phonenumber}`;
     membershiplevel.innerHTML = `${company.membershiplevel}`;
     state.innerHTML = `State: ${company.state}`;
-    weburl.innerHTML = `<a href ="${company.weburl}" target="_blank">${company.name}'website link </a>`;
+    weburl.innerHTML = `<a href ="${company.weburl}" target="_blank">${company.name}'s website link </a>`;
     detail.innerHTML = `${company.detail}`;
     
     
 
     card.appendChild(name);
-    //card.append(imageurl);
     card.appendChild(category);
     card.appendChild(phonenumber);
     card.appendChild(membershiplevel);
@@ -57,6 +57,7 @@ function buildProphetCards(data) {
     card.appendChild(weburl);
     card.appendChild(detail);
     card.appendChild(icon);
+    card.append(logo);
     cards.appendChild(card);
   })
 }
