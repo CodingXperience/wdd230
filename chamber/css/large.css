@@ -94,12 +94,25 @@
   .marquee span {
     line-height: 140px;
   }
-  .population {
+
+  
+  .demo-info {
     display: none;
   }
-  .demography {
+  .storage {
+    display: block;
     grid-column: 1 / span 3;
     grid-row: 3;
+  }
+  .population {
+    display: block;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+  }
+  .demography {
+    display: block;
+    grid-column: 1 / span 3;
+    grid-row: 6 / span 2;
   }
   .item_one {
     grid-column: 1 / span 3;

@@ -80,12 +80,8 @@
   .demography {
     display: none;
   }
-  .item_one {
-    display: none;
-  }
-  .item_two {
-    display: none;
-  }
+
+
   
   section:nth-child(7) {
     grid-column: 1 / span 2;
@@ -104,7 +100,8 @@
     grid-row: 5;
   }
   section:nth-child(11) {
-    display: none;
+    grid-column: 1 / span 4;
+    grid-row: 6;
   }
   main.directory_main{
     display: block;

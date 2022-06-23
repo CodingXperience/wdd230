@@ -318,19 +318,20 @@ section div img {
 #info1 {
   display: none;
 }
+.storage {
+  display: none;
+}
+.population {
+  display: none;
+}
 
 .demography {
   display: none;
 }
-.item_one {
-  display: none;
-}
-.item_two {
-  display: none;
-}
+
 
 .join_main {
-  background-image: url("../images/textured_background1.jpg");
+  background-image: url("../images/greyfloral.png");
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -402,12 +403,15 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #A0EBE5;
-  color: white;
+  background-color: #0B0B0B;
+  color: #A0EBE5;
   padding: .75rem 1.5rem;
   margin: 0 0 2rem 2%;
   width: 96%;
   max-width: 20rem;
+}
+input.submitBtn:hover {
+  font-weight: 900;
 }
 form label.top input:required {
   border-left: red solid 6px;
