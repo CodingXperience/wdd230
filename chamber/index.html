@@ -69,14 +69,14 @@
       <p>Learn more....</p>
     </div>
     <div class="place-holder-box weather">
-      <h2 id="weather_title">weather</h2>
+      <h2 id="weather_title">Weather conditions for <span id="place">city</span></h2>
       <figure class="weather_illustration">
-        <img src="images/weather_symbol.jpg" alt="weather icon">
+        <img id="weather_icon" src="images/weather_placeholder.png" alt="current weather">
       </figure>
-      <p><span id="temp">32&deg;C</span></p>
+      <p><span id="currentTemp"></span>&deg;C</p>
       <h3 class="weather_second_title">Partly Cloudy</h3>
       <hr>
-      <p class="speed_paragraphy">Wind Speed: <span id="speed">60</span>km/h</p>
+      <p class="speed_paragraphy">Wind Speed: <span id="windSpeed">60</span>km/h</p>
       <p class="chill_paragraphy" id="chill">Wind Chill: </p>
     </div>
     <article class="place-holder-box news">
@@ -136,6 +136,7 @@
     <div id="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span></div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/weather.js"></script>
   
 </body>
 </html>
