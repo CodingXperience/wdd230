@@ -4,8 +4,7 @@
     grid-column: span 3;
   }
   body {
-    max-width: 60rem;
-    margin: auto;
+    
   }
 
   /*----------- NAVIGATION --------------*/
@@ -31,8 +30,11 @@
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25px 50px;
+    grid-template-rows: 25px 50px 236px 270px;
+    max-width: 83rem;
+    margin: auto;
   }
+  
   #message {grid-row: 1; grid-column: span 4; text-align: center;}
   .title {
     grid-column: 1; 
@@ -46,7 +48,7 @@
   }
   .home-illustration img {
     display: block;
-    height: auto;
+    height: -webkit-fill-available;
   }
   .news {grid-column: 2 / span 3; grid-row: 5;}
   .spot1 {grid-column: 4; grid-row: 3;}
