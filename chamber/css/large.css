@@ -3,9 +3,6 @@
   .date {
     grid-column: span 3;
   }
-  body {
-    
-  }
 
   /*----------- NAVIGATION --------------*/
   nav button {display: none;}
