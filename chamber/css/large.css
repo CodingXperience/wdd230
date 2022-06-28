@@ -6,6 +6,7 @@
 
   /*----------- NAVIGATION --------------*/
   nav button {display: none;}
+  nav ul li {flex-basis: 10%;}
 
   nav ul {
     display: flex;
@@ -16,19 +17,16 @@
   nav ul li a {
     border: none;
     padding: .5rem 1rem;
-    border-right: 1px solid rgba(0,0,0,0.3);
   }
 
   nav ul li.active a {
-    color: #FFFFFF;
-    background-color: #2F6630;
+    background-color: rgba(253, 167, 79, 0.2);
   }
-
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25px 50px 236px 270px;
-    max-width: 70rem;
+    max-width: 78rem;
     margin: auto;
   }
   
