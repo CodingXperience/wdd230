@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25px 50px 236px 270px;
-    max-width: 83rem;
+    max-width: 70rem;
     margin: auto;
   }
   
