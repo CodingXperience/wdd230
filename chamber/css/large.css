@@ -20,7 +20,8 @@
   }
 
   nav ul li.active a {
-    background-color: rgba(253, 167, 79, 0.2);
+    background-color: #2F6630;
+    color: whitesmoke;
   }
   main {
     display: grid;
