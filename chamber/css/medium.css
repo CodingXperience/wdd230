@@ -53,7 +53,13 @@
 
   footer {
     display: grid;
-    grid-template-columns: 5rem auto auto;
+    grid-template-columns: 10rem auto auto;
+  }
+  
+
+  #logo img {
+    width: 60%;
+    padding: 8px;
   }
 
   picture {grid-column: 1;}
