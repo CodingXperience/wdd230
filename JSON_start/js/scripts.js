@@ -19,6 +19,7 @@ fetch(apiURL)
     //console.log(icon_path)
 
     document.getElementById("weather_icon").src = icon_path;
+    
 
  }); //end of "then" fat arrow function
 
