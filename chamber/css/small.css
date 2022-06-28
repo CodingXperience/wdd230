@@ -132,24 +132,11 @@ div.hideme{display: none;}
   margin-top: 8px;
 }
 
-.marquee {
-  display: block;
-  margin: auto auto;
-  white-space: nowrap;
-  overflow: hidden;
-  min-width: 100%;
-  height: 100%;
-}
-
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  font-family: 'poppinsbold';
-  text-align: center;
   -webkit-text-stroke: 1px #A0EBE5;
   white-space: nowrap;
-  min-width: 100%;
-  height: 100%;
   font-size: 20px;
   animation: marquee 10s linear infinite;
 }

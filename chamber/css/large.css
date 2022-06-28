@@ -18,11 +18,6 @@
     border: none;
     padding: .5rem 1rem;
   }
-
-  nav ul li.active a {
-    background-color: #2F6630;
-    color: whitesmoke;
-  }
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -31,7 +26,6 @@
     margin: auto;
   }
   
-  #message {grid-row: 1; grid-column: span 4; text-align: center;}
   .title {
     grid-column: 1; 
     grid-row: 2;
@@ -85,12 +79,9 @@
     width: 54%;
     left: 129px;
   }
-  .marquee_wrapper {
-    height: 140px;
-  }
 
   .marquee span {
-    line-height: 140px;
+    line-height: 28px;
   }
 
   
