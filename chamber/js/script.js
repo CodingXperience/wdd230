@@ -29,7 +29,7 @@ console.log(today);
 const dayNumber = today.getDay();
 //console.log(dayNumber);
 const element = document.getElementById("message");
-if (dayNumber == 1 || dayNumber == 2) {
+if (dayNumber == 1 || dayNumber == 6) {
   element.classList.add("showme");
 }else {
   element.classList.add("hideme");
