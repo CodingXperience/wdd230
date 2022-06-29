@@ -203,7 +203,7 @@ h2 {
 .weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 95px 50px 25px;
+  grid-template-rows: 50px 85px 50px 25px;
 }
 
 #weather_title {
@@ -267,6 +267,10 @@ figcaption.weather_second_title {
 .chill_paragraphy {
   grid-column: 1 / span 2;
   grid-row: 5;
+}
+.tribute_paragraphy {
+  grid-column: 1 / span 2;
+  grid-row: 6;
 }
 
 .frameset figure img {
