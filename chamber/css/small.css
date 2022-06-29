@@ -22,6 +22,15 @@ header {
   color: #FFFFFF;
 }
 
+video{
+  display: none;
+}
+#backup_image img{
+  display: none;
+}
+#backup_image figcaption{
+  display: none;
+}
 .hero {
   position: relative; 
 }
@@ -290,6 +299,12 @@ section div img {
   padding: 2rem;
 }
 
+.demo-info p{
+  color: #09B8BA;
+  width: 100%;
+  font-weight: 900;
+}
+
 #contact-heading {
   display: flex;
   justify-content: center;
@@ -304,8 +319,6 @@ section div img {
 .info {
   text-align: center;
   border: 1px solid #dee2e6;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
 }
 .info img {
   width: 50%;
@@ -578,4 +591,9 @@ section div img {
 
 .list a:hover {
   font-weight: 750;
+}
+
+footer p {
+  color: whitesmoke;
+  font-weight: 900;
 }

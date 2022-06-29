@@ -21,11 +21,19 @@
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25px 50px 236px 270px;
-    max-width: 78rem;
+    grid-template-rows: 25px 50px auto 270px;
+    max-width: 63rem;
     margin: auto;
   }
-  
+  video {
+    display: block;
+    width: 100%;
+    height: 297px;
+  }
+  #backup_image img{
+    display: block;
+    width: 100%;
+  }
   .title {
     grid-column: 1; 
     grid-row: 2;
@@ -60,7 +68,7 @@
     display: block;
     line-height: 2em;
     width: 6em;
-    background-color: #FDA74F;
+    background-color: #09B8BA;
     font-size: 1.2em;
     border-radius: 7px;
     border: none;
@@ -71,13 +79,13 @@
   .action {
     display: block;
     position: absolute;
-    bottom: 34px;
+    bottom: 180px;
     background-color: rgba(240, 240, 240, 0.8);
     margin: 1em 2em;
     padding: 2em;
     text-align: center;
     width: 54%;
-    left: 129px;
+    left: 35%;
   }
 
   .marquee span {
@@ -219,3 +227,38 @@
   
 
 } /*end large */
+@media only screen and (min-width: 65rem) {
+  main {
+    max-width: 69rem;
+  }
+
+  nav {
+    margin-left: 65px;
+  }
+
+  header {
+    padding: .5rem 7%;
+  }
+
+  #backup_image figcaption{
+    display: block;
+    color: #09B8BA;
+    font-weight: 900;
+    margin-top: 10px;
+  }
+  footer {
+    grid-template-columns: 10rem auto auto;
+  }
+  
+
+  #logo img {
+    float: right;
+    width: 60%;
+    padding: 8px;
+    margin-top: 0;
+  }
+
+  #personal-info {
+    margin-right: 5rem;
+  }
+}
