@@ -138,7 +138,7 @@ div.hideme{display: none;}
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .marquee span {
