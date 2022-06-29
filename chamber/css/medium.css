@@ -1,5 +1,6 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
+
   .date {
     border: 1px solid #BBB;
     grid-column: span 3;
@@ -38,7 +39,7 @@
     height: 44px;
     width: 100%;
   }
-  picture img {
+  #logo img {
     max-width: 100%;
   }
 
@@ -70,10 +71,6 @@
   #personal-info {grid-column: 3; text-align: right; margin-right: 1rem;}
   #copyright {grid-column: span 3;}
 
-  .demo-info {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .demo-info p{
     width: 100%;
     font-weight: 900;
@@ -83,7 +80,8 @@
   #info1 {
     display: block;
   }
-  section:nth-child(3) {
+  .demo-info {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 4;
     grid-row: 3;
   }
@@ -91,25 +89,23 @@
     display: none;
   }
 
-
-  
-  section:nth-child(7) {
+  .item_one {
     grid-column: 1 / span 2;
     grid-row: 4;
   }
-  section:nth-child(8) {
+  .item_two {
     grid-column: 3 / span 2;
     grid-row: 4;
   }
-  section:nth-child(9) {
+  .ninth_child {
     grid-column: 1 / span 2;
     grid-row: 5;
   }
-  section:nth-child(10) {
+  .tenth_child {
     grid-column: 3 / span 2;
     grid-row: 5;
   }
-  section:nth-child(11) {
+  .eleventh_child {
     grid-column: 1 / span 2;
     grid-row: 6;
   }

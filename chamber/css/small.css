@@ -259,6 +259,10 @@ figcaption.weather_second_title {
   margin: 15px;
 }
 
+.button a:hover {
+  background-image: linear-gradient(-90deg, #FF4E50, #F9D423);
+  font-weight: 700;
+}
 
 .chill_paragraphy {
   grid-column: 1 / span 2;
@@ -280,9 +284,16 @@ section {
   margin: .5rem;
 }
 
-section div img {
+.discover_main div img {
   width: 100%;
 }
+
+
+.discover_main div {
+  border: 1px solid #9aa0a6;
+  margin: .5rem;
+}
+
 
 .contact-container {
   width: 100%;

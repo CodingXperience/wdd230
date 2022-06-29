@@ -64,7 +64,7 @@
     margin: 6px;
   }
 
-  .action button {
+  #join-button {
     display: block;
     line-height: 2em;
     width: 6em;
@@ -74,7 +74,11 @@
     border: none;
     color: white;
     margin: auto;
-    
+  }
+
+  #join-button:hover {
+    background-image: linear-gradient(-90deg, #FF4E50, #F9D423);
+    font-weight: 800;
   }
 
   .action {
@@ -112,33 +116,33 @@
     grid-column: 1 / span 3;
     grid-row: 6 / span 2;
   }
-  .item_one {
+  /*.item_one {
     grid-column: 1 / span 3;
     grid-row: 4 / span 2;
   }
   .item_two {
     grid-column: 1 / span 3;
     grid-row: 4 / span 2;
-  }
+  }*/
 
-  section:nth-child(7) {
+  .item_one {
     grid-column: 4;
     grid-row: 3;
   }
-  section:nth-child(8) {
+  .item_two {
     grid-column: 4;
     grid-row: 4;
   }
 
-  section:nth-child(9) {
+  .ninth_child {
     grid-column: 4;
     grid-row: 5;
   }
-  section:nth-child(10) {
+  .tenth_child {
     grid-column: 4;
     grid-row: 6;
   }
-  section:nth-child(11) {
+  .eleventh_child {
     display: block;
     grid-column: 4;
     grid-row: 7;
@@ -171,6 +175,7 @@
     clear: both;
     column-count: 2;
     column-rule: 1px solid #ddd;
+    border: none;
   }
 
 
