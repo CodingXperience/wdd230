@@ -364,6 +364,10 @@ section {
 .join_main #message {
   display: none;
 }
+
+.contact_main #message {
+  display: none;
+}
 .join_header {
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -381,7 +385,7 @@ section {
   margin-left: 7px;
 }
 
-form{
+.join_main form {
   grid-column: 1;
   grid-row: 3;
   margin-top: -30px;
@@ -615,4 +619,98 @@ section div img {
 footer p {
   color: whitesmoke;
   font-weight: 900;
+}
+
+/* contact form code goes here */
+
+.contact-top {
+  display: block;
+  padding-top: 1rem;
+  font-size: .8rem;
+}
+
+.contact_main form {
+  margin-left: 7px;
+}
+
+form label.contact-top input {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.contact_main textarea {
+  width: 100%;
+  height: 20vh;
+}
+
+.contact_main form input.submitBtn {
+  margin: auto;
+}
+
+.contact_main input.submitBtn:hover {
+  font-weight: 550;
+}
+.contact_main h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.contact_main hr {
+  width: 2%;
+  text-align: center;
+  border: 1px solid #09B8BA;
+}
+.circle img {
+  width: 35%;
+  height: auto; 
+}
+
+.circle:hover {
+  background:#09B8BA;
+}
+
+.contact_info_wrapper p {
+  text-align: center;
+}
+
+.contact_info_wrapper {
+  margin-top: 70px;
+}
+.circle {
+  background-color: #dee2e6;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 46%);
+}
+
+.contact_main figure img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#feedback {
+  background-color: #A0EBE5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we're ready for it*/
+  display: none;
+  bottom: 350px;
+  text-align: center;
+}
+
+.moveDown {
+  margin-top: 3em;
 }

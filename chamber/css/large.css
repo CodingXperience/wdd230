@@ -266,4 +266,24 @@
   #personal-info {
     margin-right: 5rem;
   }
+  .contact_info_wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .circle_two {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .circle_paragraph_two {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .circle_four {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .circle_paragraph_four {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
 }
