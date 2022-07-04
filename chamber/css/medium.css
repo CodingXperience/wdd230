@@ -28,12 +28,12 @@
   #message{grid-column: span 4; grid-row: 1;}
   .title {grid-column: 1; font-size: 1.5rem; padding: 0;}
   .hero {grid-column: span 4; grid-row: 3; display: block;}
-  .news {grid-column: span 4; grid-row: 4;}
-  .spot1 {grid-column: span 2; grid-row: 5;}
-  .spot2 {grid-column: 3 / span 2; grid-row: 5;}
-  .join {display:block; grid-column: span 4; grid-row: 6;}
-  .event {grid-column: span 2; grid-row: 7;}
-  .weather {grid-column: 3 / span 2; grid-row: 7;}
+  .news {grid-column: span 4; grid-row: 4; background-color: rgba(240, 240, 240, 0.8);}
+  .spot1 {grid-column: span 2; grid-row: 5; background-color: rgba(240, 240, 240, 0.8);}
+  .spot2 {grid-column: 3 / span 2; grid-row: 5; background-color: rgba(240, 240, 240, 0.8);}
+  .join {display:block; grid-column: span 4; grid-row: 6; background-color: rgba(240, 240, 240, 0.8);}
+  .event {grid-column: span 2; grid-row: 7; background-color: rgba(240, 240, 240, 0.8);}
+  .weather {grid-column: 3 / span 2; grid-row: 7; background-color: rgba(240, 240, 240, 0.8);}
 
   .marquee_wrapper {
     height: 44px;
@@ -165,7 +165,7 @@
   }
 
   .list section {
-    align-self: end;
+    justify-content: space-between;
   }
 
   .list section p:nth-child(5) {

@@ -9,18 +9,18 @@ const cards = document.querySelector('.cards');
 //     console.table(jsonObject);  // temporary checking for valid response and data parsing
 //   });
 
-async function getProphets() {
+async function getBusinesses() {
   let response = await fetch(requestURL);
   if (response.ok) {
     let data = await response.json();
     //console.log(data);
-    buildProphetCards(data);
+    buildBusinessCards(data);
   }else {
     throw Error(response.statusText);
   }
 }
 
-function buildProphetCards(data) {
+function buildBusinessCards(data) {
   data.companies.forEach(company => {
     let card = document.createElement("section");
     let name = document.createElement("h2");
@@ -30,7 +30,7 @@ function buildProphetCards(data) {
     let weburl = document.createElement("p");
     let state = document.createElement("p");
     let phonenumber = document.createElement("p");
-    let membershiplevel = document.createElement("p");
+    //let membershiplevel = document.createElement("p");
     let detail = document.createElement("button");
     
 
@@ -42,7 +42,7 @@ function buildProphetCards(data) {
     logo.setAttribute("alt", `${company.name}'s logo`);
     category.innerHTML = `Category: ${company.category}`;
     phonenumber.innerHTML = `Contact: ${company.phonenumber}`;
-    membershiplevel.innerHTML = `${company.membershiplevel}`;
+    //membershiplevel.innerHTML = `${company.membershiplevel}`;
     state.innerHTML = `State: ${company.state}`;
     weburl.innerHTML = `<a href ="${company.weburl}" target="_blank">${company.name}'s website link </a>`;
     detail.innerHTML = `<a href="#">${company.detail}</a>`;
@@ -52,7 +52,7 @@ function buildProphetCards(data) {
     card.appendChild(name);
     card.appendChild(category);
     card.appendChild(phonenumber);
-    card.appendChild(membershiplevel);
+    //card.appendChild(membershiplevel);
     card.appendChild(state);
     card.appendChild(weburl);
     card.appendChild(detail);
@@ -62,4 +62,4 @@ function buildProphetCards(data) {
   })
 }
 
-getProphets();
+getBusinesses();
