@@ -768,10 +768,10 @@ thead th {
   font-weight: 900;
 }
 
-#unique a:hover {
+.unique a:hover {
   font-weight: 900;
   background-color: whitesmoke;
 }
-#unique a{
+.unique a{
   color: #2F6630;
 }
