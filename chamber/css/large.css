@@ -50,7 +50,7 @@
   }
   .news {grid-column: 2 / span 3; grid-row: 5;}
   .spot1 {grid-column: 4; grid-row: 3;}
-  .spot2 {grid-column: 4; grid-row: 4;}
+  .spot2 {grid-column: 4; grid-row: 4; text-align: revert;}
   .join {display: block; grid-column: 1; grid-row: 5; text-align: inherit;}
   .event {grid-column: 1; grid-row: 3;}
   .weather {grid-column: 1; grid-row: 4;}
@@ -58,6 +58,7 @@
   .spot1 {
     display: grid;
     grid-template-rows: 230px 244px;
+    text-align: revert;
   }
   
   .event figure img {
@@ -65,6 +66,7 @@
     width: 100%;
   }
   .aside {
+    display: block;
     color: #09B8BA;
     font-weight: 900;
   }
@@ -75,17 +77,7 @@
   .spot2 h3 {
     margin: 5px 0 0 7px;
   }
- 
-  .spot1 img:nth-child(3) {
-    border: 1px solid #0B0B0B;
-    width: 80%;
-    margin-left: 24px;
-  }
-  .spot2 img {
-    border: 1px solid #0B0B0B;
-    width: 80%;
-    margin-left: 24px;
-  }
+
   .spot_b {
     display: block;
   }
@@ -99,9 +91,9 @@
   .spot2 hr {
     display: none;
   }
-  /*.spot_b h3{
-    margin: 0;
-  }*/
+  .spot_b {
+    margin-top: 1rem;
+  }
 
   /*.spot2 h3{
     margin: 0;
@@ -254,7 +246,6 @@
     border: none;
   }
 
-
   main.directory_main{
     display: block;
   }
@@ -391,5 +382,11 @@
   table {
     padding: 1rem;
   }
+
+  
+  figcaption.weather_second_title {
+    left: 130px;
+  }
+
 
 }

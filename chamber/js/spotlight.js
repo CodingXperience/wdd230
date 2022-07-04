@@ -26,7 +26,7 @@ fetch(requestURL)
     let name = document.createElement('h3');
     let slogan = document.createElement('p');
     let spot_illustration = document.createElement('img');
-    let email = document.createElement('p');
+    let email = document.createElement('a');
     let phonenumber = document.createElement('p');
     let hr = document.createElement('hr');
     
@@ -34,12 +34,14 @@ fetch(requestURL)
     slogan.textContent = `${company.slogan}`;
     spot_illustration.setAttribute('src', company.spot_illustration);
     spot_illustration.setAttribute('alt', `${company.name} illustration`);
-    email.textContent = `E-mail: ${company.email}`;
+    email.textContent = `${company.email}`;
+    email.setAttribute('href', "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1656945785&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d55302008-a6d0-2843-a200-515e4a5e9f66&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015")
     phonenumber.textContent = `Our Contact: ${company.phonenumber}`;
 
     const spotlight = document.querySelector(elementID)
 
-    
+    email.classList.add('unique')
+    spot_illustration.classList.add('effect');
     spotlight.appendChild(name);
     spotlight.appendChild(slogan);
     spotlight.appendChild(spot_illustration);

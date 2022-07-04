@@ -24,7 +24,12 @@ header {
 .spot_b {
   display: none;
 }
-
+.spot1 hr {
+  display: none;
+}
+.spot2 hr {
+  display: none;
+}
 video{
   display: none;
 }
@@ -484,14 +489,10 @@ input[type="radio"] {
   display: none;
 }
 
-section div img[data-src] {
+.discover_main div img[data-src] {
   filter: blur(0.2em);
 }
 
-section div img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
 
 .cards section{
   display: grid;
@@ -751,6 +752,10 @@ table {
   font-weight: 900;
 }
 
+.aside {
+  display: none;
+}
+
 tr:nth-child(odd) {
   background-color: #A0EBE5;
 }
@@ -774,4 +779,32 @@ thead th {
 }
 .unique a{
   color: #2F6630;
+}
+
+.spot1 {
+  text-align: center;
+}
+
+.spot2 {
+  text-align: center;
+}
+
+
+.spot1 img:nth-child(3) {
+  border: 1px solid #0B0B0B;
+  width: 90%;
+  margin-left: 12px;
+}
+.spot2 img {
+  border: 1px solid #0B0B0B;
+  width: 90%;
+  margin-left: 12px;
+}
+
+a.unique {
+  color: #2F6630;
+  margin-left: 4px;
+}
+.unique:hover {
+  font-weight: 800;
 }
