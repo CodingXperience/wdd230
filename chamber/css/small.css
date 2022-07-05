@@ -704,6 +704,7 @@ form label.contact-top input {
 
 .contact_info_wrapper p {
   text-align: center;
+  background-color: rgba(240, 240, 240, 0.8);
 }
 
 .contact_info_wrapper {
