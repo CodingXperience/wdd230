@@ -1,20 +1,39 @@
-//let lastVisit = localStorage.getItem('visits-ls');
-const visitEL = document.querySelector('.last-visit');
+let currentDate = Date.now();
+const visitCounts = document.querySelector(".visit-days");
 
-// Factor to adjust date string
-const FACTOR = 1000 * 60 * 60 * 24;
+const dayInMills = 24 * 60 * 60 * 1000;
 
-// Load the local storage and set the element variable
-let lastVisit = Number(window.localStorage.getItem("visits-ls"));
-// Calculate today and last visit day to the day
-//let lastDay = Math.trunc(lastVisit / FACTOR);
-//let today = Math.trunc(Date.now() / FACTOR);
+const hours = (dateNum) => {
+    let date = new Date(dateNum);
+    let year = date.getFullYear();
+    let month = date.getMonth();
+    let day = date.getDate();
+    return new Date(year, month, day);
+};
 
-// Display welcome message based on last visit day
-if (lastVisit !== 0){
-    visitEL.textContent = Math.round((Date.now() - lastVisit)/FACTOR);
-
-} else {
-    visitEL.textContent = `Welcome to the site, Hope you enjoy`;
+if (!window.localStorage.getItem("previous-visit")) {
+    localStorage.setItem(
+      "previous-visit",
+      Number(hours(currentDate) - dayInMills)
+    );
 }
-localStorage.setItem('visits-ls', Date.now());
+if (!window.localStorage.getItem("last-visit")) {
+localStorage.setItem("last-visit", Number(hours(currentDate)));
+}
+
+const prevVisit = Number(window.localStorage.getItem("previous-visit"));
+const lastVisit = Number(window.localStorage.getItem("last-visit"));
+
+let prevDay = new Date(prevVisit);
+let lastDay = new Date(lastVisit);
+let days = currentDate - lastDay;
+
+if (days > dayInMills) {
+    localStorage.setItem("previous-visit", Number(lastDay));
+    localStorage.setItem("last-visit", Number(hours(currentDate)));
+    let displayDays = Math.floor(days / dayInMills);
+    visitCounts.textContent = displayDays;
+} else {
+    let displayDays = Number((lastDay - prevDay) / dayInMills);
+    visitCounts.textContent = displayDays;
+}
