@@ -378,6 +378,7 @@ section {
 
 .join_main {
   background-image: url("../images/greyfloral.png");
+  background-repeat: repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;

@@ -1,0 +1,37 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+  /*----------- BODY --------------*/
+  h1 {
+      font-size: 2em;
+  }
+  
+  
+  /*----------- HEADER --------------*/
+  
+  
+  
+  /*----------- NAVIGATION --------------*/
+      nav ul {
+          display: flex;
+      }
+      nav ul li {flex-basis: 25%;}
+  
+  
+      nav ul li a{padding: .5rem 1rem;}
+  
+  
+  /*----------- MAIN --------------*/
+  section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 30px;
+      grid-gap: 5px;
+  
+  }
+  
+  
+  /*----------- FOOTER --------------*/
+      
+  } /* end of media query */
