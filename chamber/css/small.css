@@ -645,7 +645,6 @@ input[type="radio"] {
 
 footer p {
   color: whitesmoke;
-  font-weight: 900;
 }
 
 /* contact form code goes here */
@@ -654,6 +653,7 @@ footer p {
   display: block;
   padding-top: 1rem;
   font-size: .8rem;
+  color: #9c2c13;
 }
 
 .contact_main form {
@@ -775,11 +775,11 @@ thead th {
 }
 
 .unique a:hover {
-  font-weight: 900;
-  background-color: whitesmoke;
+  font-weight: bolder;
 }
 .unique a{
   color: #2F6630;
+  background-color: whitesmoke;
 }
 
 .spot1 {
