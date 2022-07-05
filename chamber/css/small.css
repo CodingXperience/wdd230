@@ -7,6 +7,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   -webkit-box-sizing: border-box; 
    box-sizing: border-box;
   }
+:root {
+  /* colors from my palette */
+  --hover-color: linear-gradient(-90deg, #FF4E50, #F9D423);
+}
+
 
 /* body rules here!*/
 body {
@@ -272,7 +277,7 @@ figcaption.weather_second_title {
 }
 
 .button a:hover {
-  background-image: linear-gradient(-90deg, #FF4E50, #F9D423) no-repeat;
+  background-image: var(--hover-color);
   font-weight: 700;
 }
 
