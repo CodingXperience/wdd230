@@ -26,7 +26,8 @@ fetch(requestURL)
     let name = document.createElement('h3');
     let slogan = document.createElement('p');
     let spot_illustration = document.createElement('img');
-    let email = document.createElement('a');
+    //let email = document.createElement('a');
+    let weburl = document.createElement('p');
     let phonenumber = document.createElement('p');
     let hr = document.createElement('hr');
     
@@ -34,18 +35,20 @@ fetch(requestURL)
     slogan.textContent = `${company.slogan}`;
     spot_illustration.setAttribute('src', company.spot_illustration);
     spot_illustration.setAttribute('alt', `${company.name} illustration`);
-    email.textContent = `${company.email}`;
-    email.setAttribute('href', "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1656945785&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d55302008-a6d0-2843-a200-515e4a5e9f66&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015")
+    //email.textContent = `${company.email}`;
+    //email.setAttribute('href', "write2fredokorio@gmail.com")
+    weburl.innerHTML = `<a href ="${company.weburl}" target="_blank">${company.name}'s website link </a>`;
     phonenumber.textContent = `Our Contact: ${company.phonenumber}`;
 
     const spotlight = document.querySelector(elementID)
 
-    email.classList.add('unique')
+    weburl.classList.add('unique')
     spot_illustration.classList.add('effect');
     spotlight.appendChild(name);
     spotlight.appendChild(slogan);
     spotlight.appendChild(spot_illustration);
-    spotlight.appendChild(email);
+    //spotlight.appendChild(email);
+    spotlight.appendChild(weburl);
     spotlight.appendChild(phonenumber);
     spotlight.appendChild(hr);
   }

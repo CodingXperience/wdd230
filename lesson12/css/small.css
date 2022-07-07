@@ -5,25 +5,26 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #237D77;
-  --secondary-color: #FDA74F;
-  --accent1-color: #0B0B0B;
+  --primary-color: #292D33;
+  --secondary-color: white;
+  --accent1-color: #237D77;
   --accent2-color: white;
+ 
 
   /* change the values below to your chosen font(s) */
   --heading-font: Ubuntu, sans-serif;
   --paragraph-font: Lora, serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #0B0B0B;  /* headlines on a white background */ 
+  --headline-color-on-black: #FFFFFF;  /* headlines on a white background */ 
   --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #0B0B0B; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #292D33; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-  --text-background-color: #0B0B0B;
-  --nav-link-color: #237D77;
-  --nav-background-color: #FDA74F;
-  --nav-hover-link-color: #FDA74F;
-  --nav-hover-background-color: #237D77;
+  --text-background-color: #292D33;
+  --nav-link-color: #292D33;
+  /*--nav-background-color: #292D33;*/
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #292D33;
 }
 
 
@@ -37,21 +38,27 @@ body {
   background-color: white;
   padding: 1em;
 }
-img {
-  max-width: 100%;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+
+/*----------- HEADER --------------*/
+header div {
+  margin-left: 10px;
 }
 header {
   padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
+  display: grid;
+  grid-template-columns:200px auto;
   background-color: var(--text-background-color);
+  color: var(--headline-color-on-black);
+  font-family: var(--heading-font);
 }
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+
+img {
+  max-width: 100%;
+  background-color: white;
 }
 
 p {
@@ -76,12 +83,14 @@ p {
 
 .primary {
   background-color: var(--primary-color);
+  color: var(--paragraph-color-on-color);
 }
 .secondary {
   background-color: var(--secondary-color);
 }
 .accent1 {
   background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
 }
 .accent2{
   background-color: var(--accent2-color);
@@ -119,12 +128,14 @@ nav a:hover {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
+  grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-areas: ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left left right right right ."
+    ". . . . bottom . . ."
+    "page2 page2 . . . . page3 page3"
+    ". . . page4 page4 . . .";
 }
 .sitemap > div {
 
@@ -147,23 +158,62 @@ nav a:hover {
   line-height: 3em;
 }
 
+.sm-page4 {
+  grid-area: page4;
+  background-color: #999999;
+  line-height: 3em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
+  height: 9em;
 }
 
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
+  height: 4.5em;
 }
 
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+  height: 4.5em;
 }
 
-img {
-  width: 20%;
+main img {
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2%;
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.wireframes figure img {
+  width: 100%;
+}
+
+figure {
+  display: table;
+}
+figcaption {
+  display: table-caption;
+  caption-side: top;
+  font-weight: 900;
+  text-shadow: 3px 15px ;
+}
+
+section picture img {
+  width: 100%;
 }
