@@ -129,13 +129,16 @@ nav a:hover {
   justify-content: center;
 
   grid-template-columns: repeat(8, 12.5%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-rows: 3em 1.5em 1.5em 3em 3em 3em;
   grid-template-areas: ". . . home home . . ."
     ". . . . top . . ."
     ". left left left right right right ."
-    ". . . . bottom . . ."
     "page2 page2 . . . . page3 page3"
-    ". . . page4 page4 . . .";
+    ". . . page4 page4 . . ."
+    ". . . . second_top . . ."
+   " . . second_left second_left second_right second_right . ."
+    ". subpage1 subpage1 . . subpage2 subpage2 .";
+
 }
 .sitemap > div {
 
@@ -164,24 +167,56 @@ nav a:hover {
   line-height: 3em;
 }
 
+.sub_one {
+  grid-area: subpage1;
+  background-color: #999999;
+  line-height: 3em;
+}
+
+.sub_two {
+  grid-area: subpage2;
+  background-color: #999999;
+  line-height: 3em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
-  height: 9em;
+  height: 6em;
+}
+
+.second_top {
+  grid-area: second_top;
+  border-left: 1px solid;
+  height: 3em;
 }
 
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
-  height: 4.5em;
+  height: 1.5em;
 }
 
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
-  height: 4.5em;
+  height: 1.5em;
+}
+
+.second_left {
+  grid-area: second_left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  height: 1.5em;
+}
+
+.second_right {
+  grid-area: second_right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  height: 1.5em;
 }
 
 main img {
@@ -211,7 +246,8 @@ figcaption {
   display: table-caption;
   caption-side: top;
   font-weight: 900;
-  text-shadow: 3px 15px ;
+  font-size: 2rem;
+  text-align: center;
 }
 
 section picture img {
