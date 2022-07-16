@@ -1,0 +1,53 @@
+{
+  "temples": [
+    {
+      "name": "Aba Nigeria Temple",
+      "history": "The Aba Nigeria Temple is the 121st operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church). The intent to construct the temple in Aba, in the state of Abia, to serve the nation's 68,000 Latter-day Saints was announced on April 2, 2000. This was the third temple to be built in Africa. The highly visible temple site is 2.5 hectares (6.3 acres) on the outskirts of Aba along the Ogbor River. A bridge had to be built over the river to provide access to the temple.",
+      "telephone": "(234) 80-3903-4810",
+      "address": "72-80 Okpu-Umuobo Rd Aba Abia State, Nigeria",
+      "email": "aba-appt@ldschurch.org",
+      "ordinanceSchedule": ["Baptisms: 5:00 AM - 8:00 PM (Walk-ins & Appointments)", "Initiatory: 6:00 AM - 8:00 PM (Walk-ins Only)", "Endowments: 1:20 - 1:40 pm (Walk-ins Only), 2:00 pm (Walk-ins & Appointments), 2:20 pm (Walk-ins Only)", "Sealings: 7:00 AM - 8:00 PM (Walk-ins & Appointments)"],
+      "services": ["Rental Clothing: Available", "Cafeteria: Available", "Distribution Center Nearby: No"],
+      "closures": "2022: Saturday, 20 August 2022, Monday, 5 September 2022 - Monday, 2 January 2023 2023: Monday, 6 March 2023 - Monday, 20 March 2023 Saturday, 19 August 2023 Monday, 4 September 2023 - Monday, 18 September 2023",
+      "imageUrl": "images/nigeria_temple.jpg",
+      "moreInfo": "https://www.churchofjesuschrist.org/temples/details/aba-nigeria-temple?lang=eng"
+    },
+    {
+      "name": "Washington D.C. Temple",
+      "history": "Plans to build the temple were announced on November 15, 1968, with a groundbreaking ceremony held on December 7.[2] Clearing of the land started May 28, 1971. The site chosen for the temple was a 57-acre (23 ha) wooded hill purchased in 1962 just north of the Capital Beltway.",
+      "telephone": "(1) 801-240-2640",
+      "address": "9900 Stoneybrook Dr Kensington MD 20895-3199 United States",
+      "email": "ldsdcsocial@gmail.com",
+      "ordinanceSchedule": ["Baptisms: 5:00 AM - 8:00 PM (Walk-ins & Appointments)", "Initiatory: 6:00 AM - 8:00 PM (Walk-ins Only)", "Endowments: 1 PM (Walk-ins & Appointments), 3 - 4 PM (Walk-ins Only)", "Sealings: 7:00 AM - 8:00 PM (Walk-ins & Appointments)"],
+      "services": ["Rental Clothing: Available", "Cafeteria: Available", "Distribution Center Nearby: Yes"],
+      "closures": ["Tuesday, 2 July 2019 - Monday, 15 July 2019", "Wednesday, 24 July 2019", "Saturday, 5 October 2019", "Wednesday, 27 November 2019 (Limited Hours)", "Thursday, 28 November 2019 - Friday, 29 November 2019", "Tuesday, 24 December 2019 - Wednesday, 25 December 2019", "Tuesday, 31 December 2019"],
+      "imageUrl": "images/washington_temple.jpg",
+      "moreInfo": "https://www.churchofjesuschrist.org/temples/details/washington-d.c.-temple?lang=eng"
+    },
+    {
+      "name": "San Diego California Temple",
+      "history": "The San Diego Temple was announced on April 7, 1984, and dedicated on April 25, 1993 by Gordon B. Hinckley. The temple was built on a 7.2-acre (2.9 ha) plot, has 4 ordinance rooms and 8 sealing rooms, and has a total floor area of 72,000 square feet (6,700 m2).",
+      "telephone": "(1) 858-622-0991",
+      "address": "7474 Charmant Dr San Diego CA 92122-5000 United States",
+      "email": "church@churchofjesuschrist.org",
+      "ordinanceSchedule": ["Baptisms: 6:00 AM - 8:15 PM (Walk-ins & Appointments)", "Initiatory: 7:00 AM - 8:15 PM (Walk-ins Only)", "Endowments: 2 - 5 PM (Walk-ins & Appointments)", "Sealings: 8:00 AM - 8:15 PM (Walk-ins & Appointments)"],
+      "services": ["Rental Clothing: Available", "Cafeteria: Available", "Distribution Center Nearby: No"],
+      "closures": "2022: Saturday, 1 October 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022 Saturday, 24 December 2022 Saturday, 31 December 2022",
+      "imageUrl": "images/san_diego_temple.jpg",
+      "moreInfo": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng"
+    },
+    {
+      "name": "Montreal Quebec Temple",
+      "history": "The temple was announced on August 6, 1998,[4] and was the sixth temple to be built in Canada. It was also one of the temples announced with a long list of others, which LDS Church president Gordon B. Hinckley hoped to have completed by the end of 2000 in order to have 100 operating temples throughout the world.",
+      "telephone": "(1) 450-646-5775",
+      "address": "1450 Blvd Marie-Victorin Longueuil QC J4G 1A4 Canada",
+      "email": "montreal.mr.stake.comms@gmail.com",
+      "ordinanceSchedule": ["Baptisms: 5:00 AM - 8:00 PM (Walk-ins & Appointments)", "Initiatory: 6:00 AM - 8:00 PM (Walk-ins Only)", "Endowments: 1 PM (Walk-ins & Appointments), 3 - 4 PM (Walk-ins Only)", "Sealings: 7:00 AM - 8:00 PM (Walk-ins & Appointments)"],
+      "services": ["Rental Clothing: Available", "Cafeteria: Available", "Distribution Center Nearby: Yes"],
+      "closures": "2022: Monday, 8 August 2022 - Monday, 17 October 2022 2023: Monday, 2 January 2023 - Monday, 16 January 2023 Monday, 17 July 2023 - Monday, 31 July 2023",
+      "imageUrl": "images/montreal_temple.jpg",
+      "moreInfo": "https://www.churchofjesuschrist.org/temples/details/montreal-quebec-temple?lang=eng"
+    }
+  ]
+}
+   

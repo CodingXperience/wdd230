@@ -1,0 +1,53 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+  /* header rules here!*/
+  header {
+    grid-template-columns: 240px auto;
+  }
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 170px;
+  }
+
+  button {display: none;}
+
+  /*----------- NAVIGATION --------------*/
+  
+  nav ul li {flex-basis: 10%;}
+  nav ul {
+    display: flex;
+    margin-left: 2vw;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    justify-content: space-around;
+  }
+
+  nav ul li a {
+    border: none;
+    padding: .5rem 1rem;
+  }
+
+  /* main rules here!*/
+  div h1, h2 {
+    font-size: 2rem;
+  }
+  
+  .homepage-wrapper-1 {
+    padding: 64px 48px;
+  }
+
+
+  .break-point-two {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: inherit;
+  }
+
+
+  section {
+		max-width: 1125px;
+  }
+
+}

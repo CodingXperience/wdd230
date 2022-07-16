@@ -1,6 +1,7 @@
 //ADD the key and change units to imperial
 const apiURL = "//api.openweathermap.org/data/2.5/weather?id=232422&appid=bb6b10f23ccbc81205ccce7971693fe4&units=imperial"
 
+
 //Go fetch it and then wait for a response.
 fetch(apiURL)
   .then((response) => response.json())
@@ -35,6 +36,8 @@ fetch(apiURL)
       } else {
         document.getElementById("chill").textContent = "Wind Chill: " + "N/A";
       } 
+
+      
 
  }); //end of "then" fat arrow function
 

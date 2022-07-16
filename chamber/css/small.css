@@ -311,10 +311,10 @@ figcaption.weather_second_title {
 section {
   display: block;
   border: 1px solid #9aa0a6;
-  margin: .5rem;
+  margin: .1rem;
 }
 
-.discover_main div img {
+.discover_main img {
   width: 100%;
 }
 
@@ -332,14 +332,6 @@ section {
   margin-right: auto;
   margin-left: auto;
   max-width: 1140px;
-}
-.demo-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 5px;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  background-color: #ffffff;
-  padding: 2rem;
 }
 
 .demo-info p{
@@ -360,14 +352,31 @@ section {
 }
 
 .info {
+  display: flex;
+  flex-direction: column-reverse;
   text-align: center;
   border: 1px solid #dee2e6;
+  background-color: rgba(240, 240, 240, 0.8);
 }
 .info img {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
-#info1 {
-  display: none;
+
+.item_one, .item_two, .ninth_child, .tenth_child, .eleventh_child p {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+.map_wrapper {
+  border: 1px solid #0B0B0B;
+  height: 490px;
+  margin-top: 15px;
+
+}
+iframe {
+  width: 100%;
+  display: block;
+  height: 100%;
 }
 .storage {
   display: none;
@@ -379,6 +388,33 @@ section {
 .demography {
   display: none;
 }
+
+/* Weather Forecast */
+.forecast-box {
+  display: flex;
+  grid-template-columns: repeat(4, 80px);
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+section#forecast {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+#forecast h2 {
+  text-align: center;
+}
+
+.forecast-box h4,
+.forecast p {
+  margin: 0;
+}
+
+.forecast-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 
 .join_main {
@@ -583,6 +619,7 @@ input[type="radio"] {
   align-items: center;
   flex-direction: row;
   padding: 1rem 0;
+  background-color: rgba(240, 240, 240, 0.8);
 }
 /*.list {
 	display: flex;

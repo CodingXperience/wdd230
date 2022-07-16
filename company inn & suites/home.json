@@ -1,0 +1,29 @@
+{
+  "companies": [
+    {
+      "name_spot1": "Kiira Motors Corporation",
+      "community_service": "Thankful Transport",
+      "spot1_illustration_one": "images/transport_icon1.jpg",
+      "slogan": "'We get it there for you'",
+      "email": "write2kiiramotors@gmail.com",
+      "spot1_illustration_two": "images/african-women-large.webp",
+      "figcaption": "[Thursday,25 May]Africa Day 2023",
+      "phonenumber_spot1": "+(256)312-100000",
+      "membershiplevel_spot1": "Bronze",
+      "logo_spot1": "images/kiira_logo.png",
+      "weburl_spot1": "https://www.kiiramotors.com/",
+      "icon_spot1": "images/bronze_icon.png"
+    },
+    {
+      "name_spot2": "Flutterwave",
+      "category": "Financial technology company",
+      "state": "Nigeria",
+      "phonenumber": "+(256)312-100000",
+      "membershiplevel": "Gold",
+      "logo": "images/flutterwave_logo.png",
+      "weburl": "http://www.flutterwave.com/",
+      "detail": "View Listing",
+      "icon": "images/gold_icon.png"
+    }
+  ]
+}

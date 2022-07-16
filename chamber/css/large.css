@@ -8,6 +8,7 @@
   nav button {display: none;}
   nav ul li {flex-basis: 10%;}
 
+
   nav ul {
     display: flex;
     margin-left: 2vw;
@@ -54,6 +55,7 @@
   .join {display: block; grid-column: 1; grid-row: 5; text-align: inherit;}
   .event {grid-column: 1; grid-row: 3;}
   .weather {grid-column: 1; grid-row: 4;}
+  #forecast {grid-row: 6; grid-column: 1 / span 4;}
 
   .spot1 {
     display: grid;
@@ -102,7 +104,9 @@
     border: 1px solid #09B8BA;
   }
   
-  
+  section {
+    margin: 0.2rem;
+  }
 
   .spot1 img:nth-child(7) {
     border: 1px solid #0B0B0B;
@@ -210,10 +214,6 @@
     display: block;
     grid-column: 4;
     grid-row: 7;
-  }
-
-  .item_one, .item_two, .ninth_child, .tenth_child, .eleventh_child p {
-    background-color: rgba(240, 240, 240, 0.8);
   }
 
   .discover_main figure{
@@ -384,5 +384,12 @@
     left: 130px;
   }
 
+  .map_wrapper {
+    height: 425px;
+  }
+
+  section {
+    margin: 0.2rem;
+  }
 
 }

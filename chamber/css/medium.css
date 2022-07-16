@@ -34,6 +34,10 @@
   .join {display:block; grid-column: span 4; grid-row: 6; background-color: rgba(240, 240, 240, 0.8);}
   .event {grid-column: span 2; grid-row: 7; background-color: rgba(240, 240, 240, 0.8);}
   .weather {grid-column: 3 / span 2; grid-row: 7; background-color: rgba(240, 240, 240, 0.8);}
+  #forecast {
+    grid-row: 8;
+    grid-column: 1 / span 4;
+  }
 
   .marquee_wrapper {
     height: 44px;
@@ -72,17 +76,22 @@
   #personal-info {grid-column: 3; text-align: right; margin-right: 1rem;}
   #copyright {grid-column: span 3;}
 
+  .demo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  }
+
+
   .demo-info p{
     width: 100%;
     font-weight: 900;
     color: #09B8BA;
   }
   
-  #info1 {
-    display: block;
-  }
   .demo-info {
-    grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 4;
     grid-row: 3;
   }
@@ -239,6 +248,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2px;
+}
+
+.map_wrapper {
+  height: 470px;
+}
+
+iframe {
+  height: 100%;
 }
 } /*end medium */
 
