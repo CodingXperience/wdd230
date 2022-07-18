@@ -28,16 +28,27 @@ function buildTempleCards(data) {
     let image = document.createElement("img");
     let container_two = document.createElement("div");
     let history = document.createElement("p");
-    let link = document.createElement("a");
+    let link = document.createElement("button");
     let services = document.createElement("p");
     let ordinance = document.createElement("p");
+    let container_three = document.createElement("div");
     let email = document.createElement("p");
     let telephone = document.createElement("p");
     let address = document.createElement("p");
+    let contact_icon_one = document.createElement("img");
+    let contact_icon_two = document.createElement("img");
+    let contact_icon_three = document.createElement("img");
+  
     
 
 
     name.innerHTML = `${temple.name}`;
+    contact_icon_one.setAttribute("src", temple.addressIcon);
+    contact_icon_one.setAttribute("alt", `house location`);
+    contact_icon_two.setAttribute("src", temple.telephoneIcon);
+    contact_icon_two.setAttribute("alt", `phone number contact`);
+    contact_icon_three.setAttribute("src", temple.mailIcon);
+    contact_icon_three.setAttribute("alt", `email address`);
     image.setAttribute("src", temple.imageUrl);
     image.setAttribute("alt", `a view of ${temple.name}`);
     history.innerHTML = `History: ${temple.history}`;
@@ -47,21 +58,38 @@ function buildTempleCards(data) {
     email.innerHTML = `<a href ="${temple.email}" target="_blank">Send my Email to the temple</a>`;
     telephone.innerHTML = `Telephone: ${temple.telephone}`;
     address.innerHTML = `Address: ${temple.address}`;
-    
+    //let container = document.querySelector('.content');
+
+
+    name.classList.add('temple-title');
+    card.classList.add('temple-card');
     container_one.classList.add('content');
     container_two.classList.add('img');
-    card.appendChild(name);
-    container_one.appendChild(history);
-    container_one.appendChild(link);
-    container_two.appendChild(image);
+    container_three.classList.add('contact-info');
+    card.append(name);
+    container_one.append(history);
+    container_three.append(address);
+    container_three.append(telephone);
+    container_three.append(email);
+    container_three.append(contact_icon_one);
+    container_three.append(contact_icon_two);
+    container_three.append(contact_icon_three);
+    container_three.append(link);
+    container_two.append(image);
+    
     //card.appendChild(services);
     //card.appendChild(ordinance);
-    //card.appendChild(email);
-    //card.appendChild(telephone);
-    //card.append(address);
-    card.appendChild(container_one);
-    card.appendChild(container_two);
-    cards.appendChild(card);
+
+    //const parent = document.querySelector(".content");
+    //const child = document.querySelector(".content p:nth-child(1)");
+    //console.log(parent);
+    //console.log(child);
+
+
+    card.append(container_one);
+    container_one.append(container_three);
+    card.append(container_two);
+    cards.append(card);
   })
 }
 

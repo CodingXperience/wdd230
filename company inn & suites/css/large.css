@@ -12,7 +12,7 @@
     width: 170px;
   }
 
-  button {display: none;}
+  header button {display: none;}
 
   /*----------- NAVIGATION --------------*/
   
@@ -46,8 +46,41 @@
   }
 
 
-  section {
+  section.temple-card {
 		max-width: 1125px;
   }
+
+  /*-------- SERVICES PAGE ------*/
+.allServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+}
+.servicesgoodGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+  margin-bottom: 10%;
+}
+
+.serveGrid > img {
+ max-height: 244px; 
+}
+
+#titleGrid {
+  margin-bottom: -15%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #titleGrid {
+    margin-bottom: -13%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  #titleGrid {
+    margin-bottom: -11%;
+  }
+}
 
 }

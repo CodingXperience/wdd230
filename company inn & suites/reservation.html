@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Fill Me In">
+  <meta name="description" content="Temple Inn & Suites">
   <meta name="author" content="Fred Okorio">
-  <title>Join: Chamber of Commerce</title>
+  <title>Reservation: Temple Inn & Suites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <!-- STYLE SHEETS -->
@@ -20,27 +20,19 @@
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/logo.webp" alt="company_logo"></a>
-    <div>
-      <h1>East African Community Chamber of Commerce</h1>
-      <h2 class="slogan">The homo sapiens</h2>
-    </div>
-    <div class="social">
-      <a href="//www.facebook.com/" target="_blank"><img src="images/facebook_media_icon.webp" alt="facebook_icon" width="35" height="35"></a>
-      <a href="//www.linkedin.com/feed/" target="_blank"><img src="images/linkedin_media_icon.webp" alt="linkedin_icon"  width="35" height="35"></a>
-    </div>
-    <span class="date"></span>
-  </header>
-  <nav>
     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-    <ul id="primaryNav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">contact</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temple.html">Temple</a></li>
+        <li class="active"><a href="reservation.html">Reservation</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <a href="index.html"><img src="images/company-inn.png" alt="company_logo"></a>
+    </div>
+  </header>
   <main class="join_main">
     <div id="message" class="marquee_wrapper">
       <div class="marquee">
@@ -81,21 +73,37 @@
     </form>
   </main>
   <footer>
-    <a id="logo" href="index.html"><img src="images/logo.webp" alt="company_logo"></a>
-    <div id="location">
-      <p>East African Community Chamber of Commerce</p>
-      <p>Wampewo Avenue, Kampala</p>
-      <p>Kampala, 00000</p>
+    <div class="footer-content-container">
+      <div class="footer-content break-point-one break-point-two">
+        <h3>Services</h3>
+          <ul>
+            <li><a href="./about.html">Business</a></li>
+            <li><a href="./about.html">Technology</a></li>
+            <li><a href="./about.html">Career development</a></li>
+          </ul>
+      </div>
+      <div class="footer-content break-point-one break-point-two">
+        <h3>USEFUL LINKS</h3>
+          <ul>
+            <li><a href="./about.html">Who we're</a></li>
+            <li><a href="./contact.html">Where we're</a></li>
+            <li><a href="http://bit.ly/pro-interns">Registration</a></li>
+          </ul>
+      </div>
+      <div class="footer-content break-point-one break-point-two">
+        <h3>TechBuzz Hub</h3>
+        <p>We're a destination of synergy, seamless innovation and a collaboration structured community.</p>
+      </div>
+      <div class="footer-content social">
+        <a href="https://www.facebook.com/YngProfessional"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/facebook.png?v=1648122589559" alt = "facebook-icon"></a>
+        <a href="https://twitter.com/TBH_ug"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/twitter.png?v=1648122593285" alt = "twitter-icon"></a>
+        <a href="#"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/instagram.png?v=1648121332617" alt = "instagram-icon"></a>
+        <a href="#"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/linkedin.png?v=1648121731642" alt = "linkedin-icon"></a>
+      </div>
     </div>
-    <div id="personal-info">
-      <p class="unique"><a href="mailto:send2fredokorio@gmail.com" target="_blank">send2fredokorio@gmail.com</a></p>
-      <p>+(256) 753 514-631</p>
-      <p class="unique">📍<a href="https://www.google.com/maps/place/Wampewo+Ave,+Kampala/@0.322682,32.5961448,17z/data=!3m1!4b1!4m5!3m4!1s0x177dbb8fc9c3b9fd:0x754fe2276a55ad1e!8m2!3d0.322682!4d32.5961448">Link to Map</a></p>
-    </div>
-    <div id="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span></div>
+    <!-- #copyright -->
+    <p class="copyright">© Copyright 2022 - All Rights Reserved | <a href="https://www.facebook.com/lookorio.ekabakaijaka/">Web Design by Fred Okorio-WDD130-15</a>| <a href="site-plan.html">Site plan</a></p>
   </footer>
-  <script src="js/script.js"></script>
   <script src="js/join_page.js"></script>
-  
 </body>
 </html>
