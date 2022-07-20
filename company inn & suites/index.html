@@ -21,12 +21,17 @@
 <body>
   <header>
     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-    <nav>
-      <ul id="primaryNav">
+    <nav class="nav">
+      <ul class="nav-box" id="primaryNav">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="temple.html">Temple</a></li>
         <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html">Services</a> 
+          <ul class="dropdown-content">
+            <li><a href="reception.html">Reception</a></li>
+            <li><a href="full-time-temple-missionary.html">Full-Time Temple Missionary</a></li>
+          </ul>
+        </li> 
       </ul>
     </nav>
     <div class="logo">
@@ -41,18 +46,25 @@
     <section class="homepage-wrapper-1">
       <div class="homepage-content-1">
         <h2 class="homepage-title-1">WELCOME TO THE LORD'S CASTLE</h2>
-        <h3>Obtain Workplace skills</h3>
-        <p class = "homepage-subtext-1">Full capacity building program that equips youths with employable and competitive skill sets, ideal for the professional working environment.</p>
-        <p class = "button">
-          <a href="#">Learn More</a>
-        </p>
+        <h3>Striking accommodation in the heart of the city</h3>
+        <p class = "homepage-subtext-1"> We're a hotel chain headquartered in Bethesda, MD 
+          that builds and manages specialized hotel accommodations near temple locations 
+          of The Church of Jesus Christ of Latter-day Saints around the world. We cater 
+          to temple workers, patrons, and their families by providing specialized services 
+          and accommodations that meet the needs of those patrons. Our overall goal is to 
+          provide information about the specialized services that this hotel chain offers 
+          to meet the needs of temple patrons who come to serve in the temple or who participate 
+          in events such as sealings, weddings, receptions, and youth trips.</p>
+        <button class="homepage-button">
+          <a href="reservation.html">Book with Us</a>
+        </button>
       </div>
       <div class="homepage-illustration-1">
         <img src="images/hero.jpg" alt="wallpaper1">
       </div>
     </section>
     <section class="temple-class">
-      <hr><h2>Temple & Ordaniances</h2>
+      <h2>Temple & Ordaniances</h2>
       <div class="temple-wrapper">
         <div class="temple-box">
           <figure>
@@ -78,7 +90,7 @@
       </div>
     </section>
     <section class="amenties-class">
-      <hr><h2>Free Amenties & Weather</h2>
+      <h2>Free Amenties & Weather</h2>
       <ul>
         <li>
           <img src="images/wifi_icon.png" alt="wifi amenties">
@@ -101,14 +113,28 @@
           <span class="is-size-6">Located on the fourth floor.</span>
         </li>
       </ul>
-      <div class="temple-box">
-        Weather & Forecast
+      <div class="weather-box">
+        <h2 id="weather_title">Weather conditions & Forecast for <span id="place">city</span></h2>
+        <div class="weather-content">
+          <figure class="weather_illustration">
+            <img id="weather_icon" src="images/weather_placeholder.png" alt="current weather">
+            <figcaption class="weather_second_title"></figcaption>
+          </figure>
+          <p><span id="currentTemp"></span>&deg;C</p>
+          <hr>
+          <p class="speed_paragraphy">Wind Speed: <span id="windSpeed">60</span>km/h</p>
+          <p class="chill_paragraphy" id="chill">Wind Chill: </p>
+          <p class="tribute_paragraphy"><a href="//openweathermap.org/" target="_blank">Source: OpenWeatherMap</a></p>
+        </div>
+        <div id="forecast">
+          <div class="forecast-box"></div>
+        </div>
       </div>
     </section>
     <div class="carousel-container">
       <div class="carousel-mincontainer">
         <div class="my_carousel">
-          <hr><h2>Testimonials</h2>
+          <h2>Testimonials</h2>
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
               <li class="active"></li>
@@ -121,32 +147,38 @@
                 <div class="carousel-mincontainer">
                   <div class="min">
                     <div class="testimonial">
-                      <p>The best mentoring and training programme for the youth.The hub ensures one leaves with both hard and soft skills to fit in the HR function.Kudos to the founder and management.</p>
+                      <p> First time here so didn’t know what to expect. I was very pleased at the cleanliness, spaciousness, and comfort of the room and by the wonderful complimentary breakfast provided.
+                        The staff, especially Mary, made me feel at home and welcome</p>
                     </div>
                     <div class="media">
                       <div class="media-left">
-                        <img src="https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/avatar.JPG?v=1646844040989" alt="Fred_student">										
+                        <img src="images/testimonial-image-one.webp" alt="Dr. Alfred image">										
                       </div>
                       <div class="media-body">
                         <div class="overview">
-                          <div class="name"><b>Fred Okorio</b></div>
-                          <div class="details">Bachelors in International Studies / MUBS</div>
+                          <div class="name"><b>Dr. Alfred McCain</b></div>
+                          <div class="details">Church President</div>
                         </div>										
                       </div>
                     </div>
                   </div>
                   <div class="min">
                     <div class="testimonial">
-                      <p>I obtained hands on experience on the life cycles of system development,Django python-backend and Frontend programming, Digital marketing strategies and project management</p>
+                      <p>
+                        Was our first place we stay together when dating and so we got
+                         married May 28,2022 so this is wee we stay the night 
+                         our wedding! Love it we will probably be going ever year for
+                          our anniversary . Staff is great! Room are lovely
+                       </p>
                     </div>
                     <div class="media">
                       <div class="media-left">
-                        <img src="https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/istockphoto-621849930-612x612.jpg?v=1646844181229" alt="markel_student">
+                        <img src="images/testimonial-image-two.webp" alt="Fred & Megan image">
                       </div>
                       <div class="media-body">
                         <div class="overview">
-                          <div class="name"><b>Megan Markel</b></div>
-                          <div class="details">Diploma in Computing/UTAMU</div>
+                          <div class="name"><b>Fred & Megan</b></div>
+                          <div class="details">A couple for 6 years</div>
                         </div>										
                       </div>
                     </div>
@@ -172,35 +204,36 @@
       <div class="footer-content break-point-one break-point-two">
         <h3>Services</h3>
           <ul>
-            <li><a href="./about.html">Business</a></li>
-            <li><a href="./about.html">Technology</a></li>
-            <li><a href="./about.html">Career development</a></li>
+            <li><a href="reception.html">Reception</a></li>
+            <li><a href="full-time-temple-missionary.html">Full-time Temple Missionary</a></li>
+            <li><a href="#">Career development</a></li>
           </ul>
       </div>
       <div class="footer-content break-point-one break-point-two">
         <h3>USEFUL LINKS</h3>
           <ul>
-            <li><a href="./about.html">Who we're</a></li>
-            <li><a href="./contact.html">Where we're</a></li>
-            <li><a href="http://bit.ly/pro-interns">Registration</a></li>
+            <li><a href="index.html">Temples</a></li>
+            <li><a href="temple.html">Where we're</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
           </ul>
       </div>
       <div class="footer-content break-point-one break-point-two">
-        <h3>TechBuzz Hub</h3>
-        <p>We're a destination of synergy, seamless innovation and a collaboration structured community.</p>
+        <h3>Temple Inn & Suites</h3>
+        <p>Striking accommodation in the heart of the city.</p>
+        <p class="unique">📍<a href="https://www.google.com/maps/place/Wampewo+Ave,+Kampala/@0.322682,32.5961448,17z/data=!3m1!4b1!4m5!3m4!1s0x177dbb8fc9c3b9fd:0x754fe2276a55ad1e!8m2!3d0.322682!4d32.5961448">Link to Map</a></p>
       </div>
       <div class="footer-content social">
-        <a href="https://www.facebook.com/YngProfessional"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/facebook.png?v=1648122589559" alt = "facebook-icon"></a>
-        <a href="https://twitter.com/TBH_ug"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/twitter.png?v=1648122593285" alt = "twitter-icon"></a>
-        <a href="#"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/instagram.png?v=1648121332617" alt = "instagram-icon"></a>
-        <a href="#"><img src = "https://cdn.glitch.global/f148729a-db24-4f82-85a3-e818002d28a1/linkedin.png?v=1648121731642" alt = "linkedin-icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt = "facebook icon"></a>
+        <a href="https://twitter.com/home" target="_blank"><img src="images/twitter.webp" alt = "twitter icon"></a>
+        <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.webp" alt = "instagram icon"></a>
+        <a href="https://www.linkedin.com/jobs/search/?currentJobId=3067708567&keywords=frontend%20developer#" target="_blank"><img src="images/linkedin.webp" alt = "linkedin icon"></a>
       </div>
     </div>
     <!-- #copyright -->
-    <p class="copyright">© Copyright 2022 - All Rights Reserved | <a href="https://www.facebook.com/lookorio.ekabakaijaka/">Web Design by Fred Okorio-WDD130-15</a>| <a href="site-plan.html">Site plan</a></p>
+    <div class="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span>|<p class="unique"><a href="https://www.facebook.com/lookorio.ekabakaijaka/">Attributes</a>|<a href="site-plan.html">Site plan</a></p></div>
   </footer>
   <script src="js/script.js"></script>
-  <!--script src="js/weather.js"></script>
-  <script src="js/spotlight.js"></script-->
+  <script src="js/weather.js"></script>
+  <script src="js/forecast.js"></script>
 </body>
 </html>

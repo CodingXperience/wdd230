@@ -62,10 +62,8 @@ body {
 /* header rules here!*/
 header {
   padding: .5rem 2%;
-  background-color: var(--text-background-color);
   display: grid;
   grid-template-columns: 50px auto;
-  color: var(--headline-color-on-black);
 }
 
 .logo {
@@ -100,7 +98,7 @@ header button {
   background-color: transparent;
   border: none;
   font-size: 2.3rem;
-  color: var(--headline-color-on-black);
+  color: var(--paragraph-color-on-white);
   grid-column: 1;
 }
 
@@ -121,16 +119,10 @@ nav {
 }
 
 
-
-nav li a {
-  color: var(--paragraph-color-on-color);
-  border-right: 1px solid rgba(0,0,0,0.3);
+nav ul li.active a{
+  font-weight: bold;
+  border-left: 3px solid black;
 }
-
-/*nav ul li.active a {
-  background-color: #2F6630;
-  color: whitesmoke;
-}*/
 
 nav a:hover {
   font-weight: 900;
@@ -155,7 +147,7 @@ div.hideme{display: none;}
 }
 
 
-section figure img {
+section.temple-class figure img {
   display: block;
   position: relative;
   border: 1px solid gainsboro;
@@ -171,7 +163,9 @@ p {
   margin: 5px;
   color: #9aa0a6;
 }
-
+.homepage-subtext-1 {
+  line-height: 1.6rem;
+}
 h2 {
   margin: 5px;
 }
@@ -183,19 +177,23 @@ h2 {
 
 section {
   display: block;
-  border: 1px solid #9aa0a6;
   margin: .5rem;
+}
+
+.services-main section {
+  border: none;
 }
 
 .homepage-illustration-1 img {
   width: 100%;
+  box-shadow: 0px 2px 5px 0px grey;
 }
 
-figcaption {
+.temple-class figcaption {
   display: block;
   padding: 8px 14px;
-  background-color: darkblue;
-  color: dodgerblue;
+  background-color: var(--accent1-color);
+  color: var(--paragraph-color-on-color);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -244,6 +242,7 @@ section.amenties-class ul {
 	display: block;
 	border-radius: 50%;
   border: 2px solid white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
   color: white;
 }
 
@@ -279,6 +278,7 @@ section.amenties-class ul {
   position: relative;    
   background: #9b9b9b;
 	padding: 15px;
+  margin: 0 0 20px;
 }
 .my_carousel .testimonial::before, .my_carousel .testimonial::after {
 	content: "";
@@ -593,9 +593,9 @@ html.temple-html {
 }
 
 /*-------- SERVICES PAGE ------*/
-.tiServices > h3 {
-  color: white;
-  background-color: rgba(255, 166, 0, 0.822);
+.services-section > h3 {
+  /*color: white;
+  background-color: rgba(255, 166, 0, 0.822);*/
   font-size: 30px;
   padding: 2%;
   text-align: center;
@@ -603,22 +603,22 @@ html.temple-html {
   margin-bottom: 0;
 }
 
-.servicesTitle {
-  color: white;
-  background-color:#80b8af;
+.services-title {
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-color-on-white);
   width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
 }
 
-.amenitiesIndex, .specialservicesIndex, .fulltimeservicesIndex, .receptionservicesIndex {
-  background-color: rgb(208, 236, 235);
+.amenities-box, .special-services-box, .fulltime-services-box, .reception-services-box {
+  /*background-color: rgb(208, 236, 235);*/
   margin: 2%;
 }
 
-ul.servicesList {
-  list-style-type: circle;
+ul.services-list {
+  list-style-type: disclosure-closed;
   background-color: inherit;
   padding: 4%;
   line-height: 2em;
@@ -626,18 +626,7 @@ ul.servicesList {
   text-align: left;
 }
 
-.servicesgoodGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2px;
-  padding: 2%;
-}
-
-.serveGrid > img {
-  width: 100%;
-}
-
-
+/*-------- form ------*/
 form fieldset {
   margin: 2rem 0;
   border: 1px solid black;
@@ -707,3 +696,43 @@ input[type="radio"] {
   margin-right: 3px;
 }
 
+
+.weather-content, .forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage-button {
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  background-color: var(--accent1-color);
+  color: inherit;
+  display: inline-block;
+
+}
+
+.homepage-button a {
+  text-decoration: none;
+  color: var(--paragraph-color-on-color);
+
+}
+
+.homepage-button a:hover {
+  font-weight: 900;
+}
+
+.unique a:hover {
+  font-weight: 900;
+}
+.unique a{
+  color: #f0f9ff;
+}
+
+main.thanks_page {
+  margin-left: 1rem;
+}

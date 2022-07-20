@@ -198,23 +198,105 @@
     box-shadow: 0 .2em 1.2em rgb(61 48 41 / 10%);
   }
 
-  /*-------- SERVICES PAGE ------*/
-@media only screen and (min-width: 650px) {
+  /* weather rules here!*/
+  .weather-box {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: rgba(240, 240, 240, 0.8);
+  }
+  *#weather_title {
+    grid-column: span 2;
+    grid-row: 1;
+  }
 
-  .servicesgoodGrid {
+  .weather-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #forecast {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .weather-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85px 50px 25px;
+    max-width: 100%;
+    margin: 0 0 1rem 1rem;
   }
 
-  #titleGrid {
-    margin-bottom: -17%;
+  .weather_illustration img {
+    grid-column: 1;
+    grid-row: 1;
   }
 
-  .serveGrid > img {
-    max-height: 198px;
+  #temp {
+    font-size: 2rem;
+    margin: auto;
+    grid-column: 2;
+    grid-row: 1;
   }
-  
-}
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+  .weather figure img {
+    width: 36%;
+    margin: 6px;
+  }
+
+  figcaption.weather_second_title {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .speed_paragraphy {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  .chill_paragraphy {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  .tribute_paragraphy {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+
+  .tribute_paragraphy a {
+    color: #2F6630;
+  }
+
+  .tribute_paragraphy a:hover {
+    background-color: whitesmoke;
+    font-weight: 900;
+  }
+
+  /* Weather Forecast */
+  .forecast-box {
+    display: flex;
+    grid-template-columns: repeat(4, 80px);
+    justify-content: space-evenly;
+    margin: 1rem;
+  }
+
+  #forecast h2 {
+    text-align: center;
+  }
+
+  .forecast-box h4,
+  .forecast p {
+    margin: 0;
+  }
+
+  .forecast-box > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 	
 } /*end medium */
 

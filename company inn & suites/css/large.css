@@ -16,19 +16,54 @@
 
   /*----------- NAVIGATION --------------*/
   
-  nav ul li {flex-basis: 10%;}
+  .nav{
+    margin: 0 auto;
+  }
+
   nav ul {
+    display: block;
+  }
+  ul.nav-box li{
+    list-style: none;
+    width: 240px;
+    line-height: 70px;
+    position: relative;
+    text-align: center;
+    float: left;
+  }
+  ul.nav-box li ul{
+    position: absolute;
+    background-color: black;
+    padding: 0 12px;
+  }
+  ul.nav-box .dropdown-content li a {
+    color: var(--paragraph-color-on-color);
     display: flex;
-    margin-left: 2vw;
-    border-left: 1px solid rgba(0,0,0,0.3);
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: max-content;
+    /* padding-left: 0; */
   }
 
-  nav ul li a {
-    border: none;
-    padding: .5rem 1rem;
+  ul.nav-box li a{
+    color: var(--paragraph-color-on-white);
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  nav ul li.active a{
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    border-left: none;
+  }
+  ul li ul{
+    display: none;
+  }
+  .nav ul li:hover ul{
+    display: block;
   }
 
+ 
   /* main rules here!*/
   div h1, h2 {
     font-size: 2rem;
@@ -51,36 +86,18 @@
   }
 
   /*-------- SERVICES PAGE ------*/
-.allServices {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2%;
-}
-.servicesgoodGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2%;
-  margin-bottom: 10%;
-}
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+  }
 
-.serveGrid > img {
- max-height: 244px; 
-}
-
-#titleGrid {
-  margin-bottom: -15%;
-}
-
-@media only screen and (min-width: 1000px) {
-  #titleGrid {
-    margin-bottom: -13%;
+  .temple-box img:hover {
+    box-shadow: 0 0 50px #333;
+    transform: scale(1.05);
   }
 }
 
-@media only screen and (min-width: 1250px) {
-  #titleGrid {
-    margin-bottom: -11%;
-  }
-}
+@media only screen and (max-width: 64rem) {
 
 }
