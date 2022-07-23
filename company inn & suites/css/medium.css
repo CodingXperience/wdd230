@@ -117,6 +117,7 @@
 
   .contact-info button {
     margin-top: 70px;
+
   }
 	
 	.contact-info a {
@@ -126,17 +127,7 @@
   .contact-info img {
    width: 100%;
   }
-  .content button {
-    border: 1px solid #b3b3b3;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .05rem;
-    color: inherit;
-    display: inline-block;
-    background-color: white;
-  }
+  
 
   .contact-info {
     display: grid;
@@ -202,9 +193,8 @@
   .weather-box {
     display: grid;
     grid-template-columns: 300px 1fr;
-    background-color: rgba(240, 240, 240, 0.8);
   }
-  *#weather_title {
+  #weather_title {
     grid-column: span 2;
     grid-row: 1;
   }
@@ -223,7 +213,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 85px 50px 25px;
     max-width: 100%;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 2rem;
+    background-color: rgba(240, 240, 240, 0.8);
   }
 
   .weather_illustration img {
@@ -297,6 +288,69 @@
     align-items: center;
   }
 
-	
+  .reserve-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 10px;
+  }
+
+
+  .full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+  }
+  
+  .map-wrapper {
+    height: 470px;
+  }
+  
+  iframe {
+    height: 100%;
+  }
+
+  .suites-wrapper {
+    display: flex;
+  }
+
+  section.reception-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 48px 32px;
+    column-gap: 5px;
+  }
+
+  div.reception-content-two {
+    grid-row: 1;
+  }
+  /*Content Two*/
+  /*.persuasive-wrapper {
+    display: grid;
+    grid-template-columns: 50px 165px 2fr 155px 50px;
+    grid-template-rows: 58px auto;
+    padding: 2rem 2rem 35px 2rem;
+    background-color: #f8f9fa;
+    width: fit-content;
+  }*/
+
+  section.temple-class h2, section.amenties-class h2 {
+    margin-left: 1.2rem;
+  }
+  
+  p.homepage-button-one {
+    display: block;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    background-color: var(--accent1-color);
+    color: inherit;
+    display: inline-block;
+    margin-left: auto;
+  }
+
 } /*end medium */
 

@@ -5,7 +5,7 @@ fetch(forecastURL)
   .then((jsonObject) => {
     //const currentWeather = jsonObject.current;
     const dailyForecast = jsonObject.daily.slice(0, 4);
-    //alerts = jsonObject.alerts;
+    alerts = jsonObject.alerts;
     console.log(jsonObject);
 
     // // Update only Homepage
@@ -24,7 +24,7 @@ fetch(forecastURL)
     // }
 
     // // Check for alerts
-    // handleAlerts();
+    handleAlerts();
 
     // Weather Forecast
     const d = new Date();

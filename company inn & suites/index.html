@@ -15,10 +15,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon1.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
+  <!-- Banner -->
+  <aside id="banner">
+    <!-- banner text here -->
+    <p id="closeBanner">&times;</p>
+  </aside>
   <header>
     <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
     <nav class="nav">
@@ -31,11 +36,12 @@
             <li><a href="reception.html">Reception</a></li>
             <li><a href="full-time-temple-missionary.html">Full-Time Temple Missionary</a></li>
           </ul>
-        </li> 
+        </li>
+        <p class="homepage-button-one"><a href="reservation.html">Book Now!</a></p>
       </ul>
     </nav>
     <div class="logo">
-      <a href="index.html"><img src="images/company-inn.png" alt="company_logo"></a>
+      <a href="index.html"><img src="images/temple-inn-logo.webp" alt="company logo"></a>
     </div>
   </header>
   <main>
@@ -55,9 +61,9 @@
           provide information about the specialized services that this hotel chain offers 
           to meet the needs of temple patrons who come to serve in the temple or who participate 
           in events such as sealings, weddings, receptions, and youth trips.</p>
-        <button class="homepage-button">
-          <a href="reservation.html">Book with Us</a>
-        </button>
+        <p class="homepage-button-two">
+          <a href="reservation.html">Book With Us</a>
+        </p>
       </div>
       <div class="homepage-illustration-1">
         <img src="images/hero.jpg" alt="wallpaper1">
@@ -71,21 +77,39 @@
             <img src="images/san_diego_temple_height.jpg" alt="temple in San Diego"/>
             <figcaption>San Diego, California</figcaption>
           </figure>
-          <p>Highlights the beauty of Zanzibar.</p>
+          <div class="temple-content">
+            <h3>Ordinance Schedule</h3>
+            <p>Baptisms: 6:00 AM - 8:15 PM (Walk-ins & Appointments), Initiatory: 7:00 AM - 8:15 PM (Walk-ins Only), Endowments: 2 - 5 PM (Walk-ins & Appointments), Sealings: 8:00 AM - 8:15 PM (Walk-ins & Appointments).</p>
+            <hr><br>
+            <h3>Services</h3>
+            <p>Rental Clothing: Available, Cafeteria: Available, Distribution Center Nearby: No</p>
+          </div>
         </div>
         <div class="temple-box">
           <figure>
             <img  src="images/washington_temple.jpg" alt="temple in Washington"/>
             <figcaption>Washington, USA</figcaption>
           </figure>
-          <p>The six pyramids of Giza. One of the seven wonders of the world.</p>
+          <div class="temple-content">
+            <h3>Ordinance Schedule</h3>
+            <p>Baptisms: 6:00 AM - 8:15 PM (Walk-ins & Appointments), Initiatory: 7:00 AM - 8:15 PM (Walk-ins Only), Endowments: 2 - 5 PM (Walk-ins & Appointments), Sealings: 8:00 AM - 8:15 PM (Walk-ins & Appointments).</p>
+            <hr><br>
+            <h3>Services</h3>
+            <p>Rental Clothing: Available, Cafeteria: Available, Distribution Center Nearby: No</p>
+          </div>
         </div>
         <div class="temple-box">
           <figure>
             <img src="images/montreal_temple_height.jpg" alt="temple im Canada">
             <figcaption>Montreal, Canada</figcaption>
           </figure>
-          <p>An aerial view of Eastern Highlands, Zimbabwe.</p>
+          <div class="temple-content">
+            <h3>Ordinance Schedule</h3>
+            <p>Baptisms: 6:00 AM - 8:15 PM (Walk-ins & Appointments), Initiatory: 7:00 AM - 8:15 PM (Walk-ins Only), Endowments: 2 - 5 PM (Walk-ins & Appointments), Sealings: 8:00 AM - 8:15 PM (Walk-ins & Appointments).</p>
+            <hr><br>
+            <h3>Services</h3>
+            <p>Rental Clothing: Available, Cafeteria: Available, Distribution Center Nearby: No</p>
+          </div>
         </div>
       </div>
     </section>
@@ -230,9 +254,10 @@
       </div>
     </div>
     <!-- #copyright -->
-    <div class="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span>|<p class="unique"><a href="https://www.facebook.com/lookorio.ekabakaijaka/">Attributes</a>|<a href="site-plan.html">Site plan</a></p></div>
+    <div class="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span>|<p class="unique"><a href="#" target="_blank">Attributes</a>|<a href="documents/[Site Plan]Company Inn & Suites.pdf" target="_blank">Site plan</a></p></div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/weather-alert.js"></script>
   <script src="js/weather.js"></script>
   <script src="js/forecast.js"></script>
 </body>

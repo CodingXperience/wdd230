@@ -1,31 +1,25 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
-
   /* header rules here!*/
   header {
     grid-template-columns: 240px auto;
   }
 
-  .logo {
+  div.logo {
     grid-column: 1;
     grid-row: 1;
-    width: 170px;
+    width: 100%;
   }
 
   header button {display: none;}
 
   /*----------- NAVIGATION --------------*/
-  
-  .nav{
-    margin: 0 auto;
-  }
-
   nav ul {
     display: block;
   }
   ul.nav-box li{
     list-style: none;
-    width: 240px;
+    width: 135px;
     line-height: 70px;
     position: relative;
     text-align: center;
@@ -34,7 +28,8 @@
   ul.nav-box li ul{
     position: absolute;
     background-color: black;
-    padding: 0 12px;
+    padding: 0 117px 0 12px;
+    display: none;
   }
   ul.nav-box .dropdown-content li a {
     color: var(--paragraph-color-on-color);
@@ -56,9 +51,6 @@
     border-bottom: 5px solid black;
     border-left: none;
   }
-  ul li ul{
-    display: none;
-  }
   .nav ul li:hover ul{
     display: block;
   }
@@ -67,10 +59,11 @@
   /* main rules here!*/
   div h1, h2 {
     font-size: 2rem;
+    margin-left: auto;
   }
   
   .homepage-wrapper-1 {
-    padding: 64px 48px;
+    margin: 5px;
   }
 
 
@@ -96,8 +89,27 @@
     box-shadow: 0 0 50px #333;
     transform: scale(1.05);
   }
+  .persuasive-wrapper {
+    grid-template-columns: 20px 300px 1fr 300px 20px;
+    grid-template-rows: repeat(4, 100px);
+  }
+  section.about-wrapper {
+    padding: 64px 48px;
+  }
+
 }
 
-@media only screen and (max-width: 64rem) {
+
+
+
+@media only screen and (min-width: 65rem) {
+  ul.nav-box li {
+    width: 190px;
+  }
+
+  ul.nav-box li ul{
+    padding: 0 75px 0 20px;
+    display: none;
+  }
 
 }
