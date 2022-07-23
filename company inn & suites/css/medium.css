@@ -337,19 +337,14 @@
   section.temple-class h2, section.amenties-class h2 {
     margin-left: 1.2rem;
   }
-  
+  div.cards {
+    margin: 0 15px 0 15px;
+
+  }
+
+ 
   p.homepage-button-one {
-    display: block;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    line-height: normal;
-    font-weight: 700;
-    letter-spacing: .05rem;
-    background-color: var(--accent1-color);
-    color: inherit;
-    display: inline-block;
-    margin-left: auto;
+    display: none;
   }
 
 } /*end medium */

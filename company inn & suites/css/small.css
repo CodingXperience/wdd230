@@ -29,12 +29,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     /*--nav-background-color: #292D33;*/
     --nav-hover-link-color: #FFFFFF;
     --nav-hover-background-color: #292D33;
-
-    --box-x-padding: 2rem;
-	  --box-y-padding: 2rem;
-    @media (min-width: 40em) {--box-y-padding: 4rem;}
-	  @media (min-width: 60em) {--box-x-padding: 3rem; --box-y-padding: 6rem;}
-		
 		
   }
 
@@ -61,8 +55,8 @@ body {
 }
 /* header rules here!*/
 header {
-  padding: .5rem 2%;
   display: grid;
+  padding: 0 0 0 2%;
   grid-template-columns: 50px auto;
 }
 
@@ -193,7 +187,7 @@ h2 {
   margin: 5px;
 }
 
-.temple-box {
+div.temple-box, div.suites-box {
   border: 1px solid gainsboro;
   margin: 25px;
 }
@@ -811,13 +805,12 @@ main.thanks_page {
   font-size: 2rem;
 }
 
-.img img[data-src] {
+/*.img img[data-src] {
   filter: blur(0.2em);
-}
+}*/
 
 .img img {
-  filter: blur(0em);
-  transition: filter 0.5s;
+  filter: blur(0.2em);
 }
 
 .reserve-main {
@@ -1027,14 +1020,19 @@ div.temple-box h3 {
   margin: .5rem;
 }
 
-p.homepage-subtext-1, .forecast-item p, div.details{
+p.homepage-subtext-1, .forecast-item p, div.details, p.title-paragraph, div.content p{
   color: var(--paragraph-color-on-white);
 }
 
-div.temple-content {
+div.temple-content, div.suites-content {
   background-color: rgba(240, 240, 240, 0.8)
 }
 
-h2.homepage-title-1, section.temple-class h2, section.amenties-class h2, div.my_carousel h2{
+h2.homepage-title-1, section.temple-class h2, section.amenties-class h2, div.my_carousel h2, div.suites-title h2, .missionary-main h2{
   font-size: 1.5rem;
 }
+
+div.suites-wrapper {
+  margin-top: 0;
+}
+

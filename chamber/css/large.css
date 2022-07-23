@@ -307,6 +307,8 @@
   .population ul li:nth-child(7) {
     display: none;
   }
+
+  
 } /*end large */
 @media only screen and (min-width: 65rem) {
   main {
