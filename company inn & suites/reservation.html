@@ -40,15 +40,6 @@
     </div>
   </header>
   <main class="reserve-main">
-    <!--div id="message" class="marquee_wrapper">
-      <div class="marquee">
-        <span>🤝🏼Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>
-      </div>
-    </div>
-    <div class="join_header">
-      <img src="images/join_banner.jpg" alt="header">
-    </div-->
-
     <h1 class="reserve-title">Make A Reservation</h1>
     <form class="reserve-form" action="confirmation.html" method="get">
         <fieldset>
@@ -339,9 +330,8 @@
             <label class="sbs"><input type="radio" name="room" value="2 Bedroom Regular">2 Bedroom Regular</label>
             <label class="sbs"><input type="radio" name="room" value="1 Bedroom Regular">1 Bedroom Regular</label>
 
+            <div id="howMany">How Many Rooms Will You be Reserving</div>
             <label for="amount">
-              <div class="rooms">Amount of Rooms:</div>
-              <div id="howMany">How Many Rooms Will You be Reserving</div>
               <input id="amount" name="quantity" value="1" min="1" max="20" step="1" oninput="adjustRating(this.value)"
                   onchange="adjustRating(this.value)" type="range">
             </label>
@@ -387,7 +377,7 @@
       </div>
     </div>
     <!-- #copyright -->
-    <div class="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span>|<p class="unique"><a href="#" target="_blank">Attributes</a>|<a href="documents/[Site Plan]Company Inn & Suites.pdf" target="_blank">Site plan</a></p></div>
+    <div class="copyright"> &copy; <span id = "the_year"></span> | Fred Okorio | Kampala &bull; Last updated: <span id = "currentdate"></span>|<p class="unique"><a href="resource.html" target="_blank">Attributes</a>|<a href="../lesson12/index.html" target="_blank">Site plan</a></p></div>
   </footer>
   <script src="js/script.js"></script>
   <script src="js/reservation.js"></script>
