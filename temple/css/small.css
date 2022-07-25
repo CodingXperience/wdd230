@@ -809,14 +809,6 @@ main.thanks_page {
   font-size: 2rem;
 }
 
-/*.img img[data-src] {
-  filter: blur(0.2em);
-}*/
-
-.img img {
-  filter: blur(0.2em);
-}
-
 .reserve-main {
   display: block;
   margin: 0 10px 0 10px;

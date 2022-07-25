@@ -185,7 +185,7 @@
   .img img {
     max-width: 100%;
     vertical-align: middle;
-    box-shadow: 0 .2em 1.2em rgb(61 48 41 / 10%);
+    box-shadow: 1rem 2rem 3rem rgb(61 48 41 / 10%);
   }
 
   /* weather rules here!*/
