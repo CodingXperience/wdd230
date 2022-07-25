@@ -833,26 +833,20 @@ main.thanks_page {
 }
 
 /* Banner */
-#banner {
+#banner p{
   color: #fff;
-  background-color: var(--accent1-color);
+  background-color: red;
   padding: 15px;
   position: relative;
   height: 50px;
-}
-
-#banner > #closeBanner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
+  margin-top: 0;
 }
 
-.hide {
+/*.hide {
   display: none;
-}
+}*/
 
 section.suites-class figure img {
   display: block;

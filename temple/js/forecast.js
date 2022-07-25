@@ -1,3 +1,9 @@
+  /* BAD WEATHER BANNER */
+
+// hide bad weather banner (default)
+const displayBanner = document.querySelector("#banner");
+displayBanner.style.display = "none";
+
 //const forecastURL = "//api.openweathermap.org/data/2.5/forecast?id=232422&appid=372fb787eb1b98093ed53bf651198d38&units=imperial";
 const forecastURL ="//api.openweathermap.org/data/2.5/onecall?lat=0.31628&lon=32.582191&exclude=minutely,hourly&units=imperial&appid=372fb787eb1b98093ed53bf651198d38";
 fetch(forecastURL)
@@ -5,26 +11,17 @@ fetch(forecastURL)
   .then((jsonObject) => {
     //const currentWeather = jsonObject.current;
     const dailyForecast = jsonObject.daily.slice(0, 4);
-    alerts = jsonObject.alerts;
-    console.log(jsonObject);
+    //alerts = jsonObject.alerts;
+    //console.log(jsonObject);
 
-    // // Update only Homepage
-    // if (
-    //   location.pathname.includes("index") ||
-    //   location.pathname.endsWith("final_project/")
-    // ) {
-    //   document.getElementById("desc").textContent =
-    //     currentWeather.weather[0].description;
-    //   document.getElementById("temp").textContent =
-    //     currentWeather.temp + "\xB0F";
-
-    //   document.getElementById("humidity").textContent = currentWeather.humidity;
-    //   document.getElementById("windSpeed").textContent =
-    //     currentWeather.wind_speed;
-    // }
+     // IF THERE IS BAD WEATHER
+     if(jsonObject.alerts != undefined){
+      displayBanner.innerHTML += `<em>EVENT: ${jsonObject.alerts.event} DESCRIPTION: ${jsonObject.alerts.description}</em>`;
+      displayBanner.style.display = "block";
+      }
 
     // // Check for alerts
-    handleAlerts();
+    //handleAlerts();
 
     // Weather Forecast
     const d = new Date();
@@ -68,3 +65,9 @@ fetch(forecastURL)
       document.querySelector(".forecast-box").appendChild(forecastItem);
     });
   });
+
+
+  function closeBanner(){
+    displayBanner.style.display = "none";
+  }
+
