@@ -1067,8 +1067,16 @@ ul.dinner-services li strong {
 }
 
   
- ul.wedding-services li p{
+ul.wedding-services li p, main.resource-page ol, main.thanks-page p{
   background-color: rgba(240, 240, 240, 0.8);
+}
+
+main.resource-page, main.thanks-page {
+  margin: 1.5rem;
+}
+
+main.resource-page ol li {
+  line-height: 2rem;
 }
 
 
