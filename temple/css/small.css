@@ -1071,4 +1071,6 @@ main.resource-page ol li {
   line-height: 2rem;
 }
 
-
+main.thanks-page img {
+  width: 100%;
+}
