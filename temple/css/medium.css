@@ -340,11 +340,37 @@
     margin: 0 15px 0 15px;
 
   }
-
- 
   p.homepage-button-one {
     display: none;
   }
+
+  ul.wedding-services {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 100px 100px;
+    padding: 0;
+  }
+  
+  ul.wedding-services li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  ul.dinner-services {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    padding: 0;
+  }
+  
+ 
+  ul.dinner-services li {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  
 
 } /*end medium */
 

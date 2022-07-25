@@ -192,6 +192,10 @@ div.temple-box, div.suites-box {
   margin: 25px;
 }
 
+div.reception-box {
+  margin: 25px;
+}
+
 section {
   display: block;
   margin: 5px;
@@ -861,7 +865,6 @@ main.thanks_page {
 section.suites-class figure img {
   display: block;
   position: relative;
-  border: 1px solid gainsboro;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
@@ -969,7 +972,13 @@ div.suites-title {
   margin-top: -68px;
 }
 
-#reception-heading-content h2{
+div.form-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#reception-heading-content h2, div.form-header h2{
   margin-left: inherit;
 }
 
@@ -978,14 +987,13 @@ div.suites-title {
   padding-bottom: 10rem;
 }
 
-#reception-heading-content img {
+#reception-heading-content img, div.form-header img{
   margin: auto;
 }
 
 div.reception-illustration-one img, div.reception-illustration-two img{
   display: block;
   max-width: 100%;
-  border: 1px solid #cccccc;
   padding: 5px;
   box-shadow: 5px 5px 5px #999999;
   margin-left: auto;
@@ -1020,7 +1028,7 @@ div.temple-box h3 {
   margin: .5rem;
 }
 
-p.homepage-subtext-1, .forecast-item p, div.details, p.title-paragraph, div.content p{
+p.homepage-subtext-1, .forecast-item p, div.details, p.title-paragraph, div.content p, p.reception-subtext{
   color: var(--paragraph-color-on-white);
 }
 
@@ -1035,4 +1043,32 @@ h2.homepage-title-1, section.temple-class h2, section.amenties-class h2, div.my_
 div.suites-wrapper {
   margin-top: 0;
 }
+
+ul.dinner-services img {
+  width: 100%;
+}
+
+ 
+ul.wedding-services img {
+  width: 15%;
+}
+
+div.logo-style {
+  display: flex;
+}
+
+ul.wedding-services li, ul.dinner-services li {
+  list-style-type: none;
+}
+
+
+ul.dinner-services li strong {
+  text-align: center;
+}
+
+  
+ ul.wedding-services li p{
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
 

@@ -330,12 +330,11 @@
             <label class="sbs"><input type="radio" name="room" value="2 Bedroom Regular">2 Bedroom Regular</label>
             <label class="sbs"><input type="radio" name="room" value="1 Bedroom Regular">1 Bedroom Regular</label>
 
-            <div id="howMany">How Many Rooms Will You be Reserving</div>
-            <label for="amount">
-              <input id="amount" name="quantity" value="1" min="1" max="20" step="1" oninput="adjustRating(this.value)"
-                  onchange="adjustRating(this.value)" type="range">
-            </label>
-            <span id="roomQuantity">1</span><br><br>
+            <div>How Many Rooms Will You be Reserving?</div>
+            <label class="sbs"><input type="radio" name="rooms" value="1" checked>1</label>
+            <label class="sbs"><input type="radio" name="rooms" value="2">2</label>
+            <label class="sbs"><input type="radio" name="rooms" value="3">3</label>
+            <label class="sbs"><input type="radio" name="rooms" value="4">4</label>
         </fieldset>
         <fieldset>
             <legend>Additional Information</legend>
