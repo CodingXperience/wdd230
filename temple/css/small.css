@@ -818,8 +818,7 @@ main.thanks_page {
   grid-column: 1 / span 2;
   grid-row: 1;
   margin-bottom: 8px;
-  font-size: 1.3rem;
-  
+  font-size: 1.3rem; 
 }
 
 .reserve-main form {
@@ -835,15 +834,21 @@ main.thanks_page {
 /* Banner */
 #banner p{
   color: #fff;
-  background-color: red;
+  background-color: black;
   padding: 15px;
   position: relative;
   height: 50px;
   cursor: pointer;
   font-size: 2rem;
   margin-top: 0;
+  float: right;
 }
+#banner {
+  text-align: center;
+  background-color: goldenrod;
+  color: #fff;
 
+}
 /*.hide {
   display: none;
 }*/
